@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D52888E0-D7A5-483E-8AE8-1195EFF93F65}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GangOfFour.Patterns</RootNamespace>
+    <AssemblyName>GangOfFour.Patterns</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Behavioral\AbstractFactory\" />
+    <Folder Include="Behavioral\Builder\" />
+    <Folder Include="Behavioral\FactoryMethod\" />
+    <Folder Include="Behavioral\Prototype\" />
+    <Folder Include="Behavioral\Singleton\" />
+    <Folder Include="Creational\Adapter\" />
+    <Folder Include="Creational\Bridge\" />
+    <Folder Include="Creational\Composite\" />
+    <Folder Include="Creational\Decorator\" />
+    <Folder Include="Creational\Facade\" />
+    <Folder Include="Creational\Flyweight\" />
+    <Folder Include="Creational\Proxy\" />
+    <Folder Include="Structural\ChainOfResponsibility\" />
+    <Folder Include="Structural\Command\" />
+    <Folder Include="Structural\Interpreter\" />
+    <Folder Include="Structural\Iterator\" />
+    <Folder Include="Structural\Mediator\" />
+    <Folder Include="Structural\Memento\" />
+    <Folder Include="Structural\Observer\" />
+    <Folder Include="Structural\State\" />
+    <Folder Include="Structural\Strategy\" />
+    <Folder Include="Structural\TemplateMethod\" />
+    <Folder Include="Structural\Visitor\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
