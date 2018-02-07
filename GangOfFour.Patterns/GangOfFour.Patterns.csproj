@@ -48,7 +48,6 @@
     <Folder Include="Behavioral\FactoryMethod\" />
     <Folder Include="Behavioral\Prototype\" />
     <Folder Include="Behavioral\Singleton\" />
-    <Folder Include="Creational\Adapter\" />
     <Folder Include="Creational\Bridge\" />
     <Folder Include="Creational\Composite\" />
     <Folder Include="Creational\Decorator\" />
@@ -66,6 +65,9 @@
     <Folder Include="Structural\Strategy\" />
     <Folder Include="Structural\TemplateMethod\" />
     <Folder Include="Structural\Visitor\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Creational\Adapter\README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
