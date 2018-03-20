@@ -53,6 +53,7 @@
     <Folder Include="ServiceLocator\" />
     <Folder Include="Specification\" />
     <Folder Include="UnitOfWork\" />
+    <Folder Include="Wrapper\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
