@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="EventAggregator\" />
+    <Folder Include="Facade" />
     <Folder Include="LazyLoad\" />
     <Folder Include="ModelViewPresenter\" />
     <Folder Include="ModelViewViewModel\" />
