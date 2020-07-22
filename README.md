@@ -1,7 +1,7 @@
-#Design Patterns
+# Design Patterns
 
 
-##Creational Patterns
+## Creational Patterns
 
 -   Abstract Factory ?!
 -   Builder
@@ -10,7 +10,7 @@
 -   Singleton ?!
 
 
-##Structural Patterns
+## Structural Patterns
 
 -   Adapter
 -   Bridge
@@ -20,7 +20,7 @@
 -   Flyweight
 -   Proxy
 
-##Behavioral Patterns
+## Behavioral Patterns
 
 -   Chain of Resposability ?!
 -   Command
@@ -28,13 +28,13 @@
 -   Iterator
 -   Mediator ?!
 -   Memento
--   ![Observer](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Structural/Observer): Use to notify a collection of objects that the internal state of another object has changed
+-   [Observer](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Structural/Observer): Use to notify a collection of objects that the internal state of another object has changed
 -   State
 -   Strategy
 -   Template Method
 -   Visitor
 
-##General Patters
+## General Patters
 
 -   Repository ?!
 -   UnitOfWork ?!
