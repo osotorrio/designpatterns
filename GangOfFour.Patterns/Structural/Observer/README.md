@@ -32,5 +32,5 @@ Imagine that working on an online shop, you are given the task to notify some us
 - there are users that want to buy the product automatically if the price of the product drops
 - there are users that just want to receive an email if the price drops
 - automatic buyers wants to buy the product only once
-- emailed users want to get notified al the time
-- there could be many products and each user would choose buy automatically or email notification depending on the product.
+- emailed users want to get notified all the time
+- there could be many products and each user would choose buy automatically or email notifications depending on the product.
