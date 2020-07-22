@@ -4,4 +4,18 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="EventAggregator\" />
+    <Folder Include="Facade\" />
+    <Folder Include="LazyLoad\" />
+    <Folder Include="ModelViewViewModel\" />
+    <Folder Include="Wrapper\" />
+    <Folder Include="UnitOfWork\" />
+    <Folder Include="Specification\" />
+    <Folder Include="ServiceLocator\" />
+    <Folder Include="Rules\" />
+    <Folder Include="Repository\" />
+    <Folder Include="NullObject\" />
+  </ItemGroup>
+
 </Project>
