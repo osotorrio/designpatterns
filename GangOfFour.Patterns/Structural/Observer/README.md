@@ -7,4 +7,4 @@ Define a one-to-many dependency between objects so that when one object changes 
 
 ### UML diagram
 
-![Image of Yaktocat](/img/uml_diagram.png)
+![Source book: Design Patters, Elements of Reusable Object-Oriented Software](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Structural/Observer/img/uml_diagram.PNG)
