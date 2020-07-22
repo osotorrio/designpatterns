@@ -8,7 +8,6 @@ namespace GangOfFour.Patterns.Structural.Observer
 {
     public class ApplicationCode
     {
-        [Fact]
         public void ExampleOfUse()
         {
             IAmCustomerObserver customerBobby = new BuyAutomaticallyCustomerObserver(Guid.NewGuid(), "Robert Fischer");
