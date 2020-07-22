@@ -12,8 +12,8 @@ Define a one-to-many dependency between objects so that when one object changes 
 
 ### Diagram explained
 - there are two main entities, **subject** and **observers**
-- subject knows about observers **by composition**
-- an observer knows about the subject **by compposition**
+- a subject knows about observers **by composition**
+- an observer knows about the subject **by composition**
 - subject **inherit** from an abstract subject
 - observers **inherit** from an abstract observer or interface
 
