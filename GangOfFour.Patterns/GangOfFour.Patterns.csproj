@@ -23,7 +23,6 @@
     <Folder Include="Structural\Iterator\" />
     <Folder Include="Structural\Mediator\" />
     <Folder Include="Structural\Memento\" />
-    <Folder Include="Structural\Observer\img\" />
     <Folder Include="Structural\Visitor\" />
     <Folder Include="Structural\TemplateMethod\" />
     <Folder Include="Structural\State\" />
