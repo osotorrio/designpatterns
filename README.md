@@ -4,19 +4,35 @@ Collection of Design Patterns
 
 Creational Patterns
 
--   Factory ?!
+-   Abstract Factory ?!
+-   Builder
+-   Factory Method ?!
+-   Prototype
 -   Singleton ?!
 
 Structural Patterns
 
 -   Adapter
+-   Bridge
+-   Composite
 -   Decorator ?!
+-   Facade
+-   Flyweight
+-   Proxy
 
 Behavioral Patterns
 
--   Chain of Resp ?!
+-   Chain of Resposability ?!
+-   Command
+-   Interpreter
+-   Iterator
 -   Mediator ?!
+-   Memento
+-   Observer
+-   State
 -   Strategy
+-   Template Method
+-   Visitor
 
 General Patters
 
