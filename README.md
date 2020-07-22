@@ -28,8 +28,8 @@ General Patters
 
 Frequency of use (1-5)
 
-5 -> Abstract Factory, Factory Method, Facade, Iterator, Observer,
-4 -> Singleton, Adapter, Composite, Proxy, Command, Strategy,
-3 -> Prototype, Bridge, Decorator, State, Template Method,
-2 -> Builder, Chain of Resp., Mediator,
-1 -> Flyweight, Interpreter, Memento, Visitor
+-   5 -> Abstract Factory, Factory Method, Facade, Iterator, Observer,
+-   4 -> Singleton, Adapter, Composite, Proxy, Command, Strategy,
+-   3 -> Prototype, Bridge, Decorator, State, Template Method,
+-   2 -> Builder, Chain of Resp., Mediator,
+-   1 -> Flyweight, Interpreter, Memento, Visitor
