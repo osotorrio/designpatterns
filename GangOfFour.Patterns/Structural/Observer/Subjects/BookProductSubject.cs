@@ -23,11 +23,9 @@
             }
             set
             {
-                if (value < _price) // Notify only when the price goes down
-                {
-                    _price = value;
-                    base.Notify();
-                }
+                if (value < _price) base.Notify(); // Notify only when the price goes down
+
+                _price = value;
             }
         }
     }

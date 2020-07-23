@@ -22,15 +22,15 @@ Define a one-to-many dependency between objects so that when one object changes 
 
 Anytime you have a collection of objects or things (**observers**) which need to be notified when another separeted object or thing (**subject**) has changed its **internal state**. 
 
-*Note: by changing internal state we mean the change of any property value of the subject.*
+*Note: by changing internal state we mean the change of the value of any its properties.*
 
 
 ### Code example
 
-Imagine that working on an online shop, you are given the task to notify some users when the price of a specific product has changes. Premises:
+Imagine while working on an online shop, you are given the task to notify some customers when the price of a specific product has changes. Premises:
 
-- there are users that want to buy the product automatically if the price of the product drops
-- there are users that just want to receive an email if the price drops
+- there are customers that want to buy the product automatically if the price of the product drops
+- there are customer that just want to receive an email if the price drops
 - automatic buyers wants to buy the product only once
-- emailed users want to get notified all the time
-- there could be many products and each user would choose buy automatically or email notifications depending on the product.
+- emailed customers want to get notified all the time
+- there could be many products and each customer would choose buy automatically or email notifications depending on the product.
