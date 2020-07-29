@@ -36,8 +36,15 @@
 
 ## General Patters
 
--   Repository ?!
--   UnitOfWork ?!
+-   EventAggregator
+-   LazyLoad
+-   ModelViewViewModel
+-   NullObject
+-   Repository
+-   Rules
+-   ServiceLocator
+-   Specification
+-   UnitOfWork
 -   Wrapper
 
 ---
