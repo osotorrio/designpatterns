@@ -2,7 +2,7 @@
 
 namespace GangOfFour.Patterns.Structural.Observer.Subjects
 {
-    public class GoodToKnowCustomerObserver : IAmCustomerObserver
+    public class GoodToKnowCustomerObserver : IAbstractCustomerObserver
     {
         public AbstractProductSubject _product;
 

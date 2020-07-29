@@ -2,7 +2,7 @@
 
 namespace GangOfFour.Patterns.Structural.Observer.Subjects
 {
-    public class BuyAutomaticallyCustomerObserver : IAmCustomerObserver
+    public class BuyAutomaticallyCustomerObserver : IAbstractCustomerObserver
     {
         private AbstractProductSubject _product;
 

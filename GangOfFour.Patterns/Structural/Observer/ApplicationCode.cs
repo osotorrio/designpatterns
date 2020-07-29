@@ -7,8 +7,8 @@ namespace GangOfFour.Patterns.Structural.Observer
     {
         public void ExampleOfUse()
         {
-            IAmCustomerObserver customerBobby = new BuyAutomaticallyCustomerObserver(Guid.NewGuid(), "Robert Fischer");
-            IAmCustomerObserver customerTigran = new GoodToKnowCustomerObserver(Guid.NewGuid(), "Tigran Petrosian");
+            IAbstractCustomerObserver customerBobby = new BuyAutomaticallyCustomerObserver(Guid.NewGuid(), "Robert Fischer");
+            IAbstractCustomerObserver customerTigran = new GoodToKnowCustomerObserver(Guid.NewGuid(), "Tigran Petrosian");
 
             BookProductSubject kasparovBook = new BookProductSubject("Garry Kasparov on My Great Predecessors", "978-1781945155", 19.95m);
 

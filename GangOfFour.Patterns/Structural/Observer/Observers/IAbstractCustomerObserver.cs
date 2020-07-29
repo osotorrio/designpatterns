@@ -2,7 +2,7 @@
 
 namespace GangOfFour.Patterns.Structural.Observer
 {
-    public interface IAmCustomerObserver
+    public interface IAbstractCustomerObserver
     {
         Guid CustomerId { get; }
 
