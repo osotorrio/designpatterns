@@ -1,8 +1,5 @@
 ﻿using GangOfFour.Patterns.Structural.Observer.Subjects;
 using System;
-using System.Collections.Generic;
-using System.Text;
-using Xunit;
 
 namespace GangOfFour.Patterns.Structural.Observer
 {
