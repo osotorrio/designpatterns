@@ -22,7 +22,7 @@ Define a one-to-many dependency between objects so that when one object changes 
 
 Anytime you have a collection of objects or things (**observers**) which need to be notified when another separeted object or thing (**subject**) has changed its **internal state**. 
 
-*Note: by changing internal stat, we mean when the value of any of its properties change*
+*Note: by changing internal state, we mean when the value of any of its properties change*
 
 
 ### Code example

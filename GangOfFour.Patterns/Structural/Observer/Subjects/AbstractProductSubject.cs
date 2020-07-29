@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace GangOfFour.Patterns.Structural.Observer
 {
@@ -16,12 +18,25 @@ namespace GangOfFour.Patterns.Structural.Observer
             _observers.Remove(customerObserver);
         }
 
+
         public void Notify()
         {
-            foreach (var observer in _observers)
+            for (int i = 0; i < _observers.Count(); i++)
+            {
+                _observers[i].Update(this);
+            }
+        }
+
+        /*
+             NOTE: A foreach cannot be used.
+
+             We expect the observers to change the collection while looping and foreach does not allow that.
+             We could use a foreach if we use _observers.ToList() which will create a copy of the collection.
+
+            foreach (var observer in _observers.ToList())
             {
                 observer.Update(this);
             }
-        }
+        */
     }
 }

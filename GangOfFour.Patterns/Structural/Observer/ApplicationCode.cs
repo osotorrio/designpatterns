@@ -1,11 +1,13 @@
 ﻿using GangOfFour.Patterns.Structural.Observer.Subjects;
 using System;
+using Xunit;
 
 namespace GangOfFour.Patterns.Structural.Observer
 {
     public class ApplicationCode
     {
-        public void ExampleOfUse()
+        [Fact]
+        public void ExampleObserverPattern()
         {
             IAbstractCustomerObserver customerBobby = new BuyAutomaticallyCustomerObserver(Guid.NewGuid(), "Robert Fischer");
             IAbstractCustomerObserver customerTigran = new GoodToKnowCustomerObserver(Guid.NewGuid(), "Tigran Petrosian");
