@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Folder Include="EventAggregator\" />
-    <Folder Include="Facade\" />
     <Folder Include="LazyLoad\" />
     <Folder Include="ModelViewViewModel\" />
     <Folder Include="Wrapper\" />

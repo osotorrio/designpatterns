@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GangOfFour.Patterns.Structural.Observer
+namespace GangOfFour.Patterns.Behavioral.Observer
 {
     public interface IAbstractCustomerObserver
     {

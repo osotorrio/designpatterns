@@ -1,4 +1,4 @@
-﻿namespace GangOfFour.Patterns.Structural.Observer
+﻿namespace GangOfFour.Patterns.Behavioral.Observer
 {
     public class BookProductSubject : AbstractProductSubject
     {

@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Runtime.InteropServices.ComTypes;
 
-namespace GangOfFour.Patterns.Structural.Observer
+namespace GangOfFour.Patterns.Behavioral.Observer
 {
     public abstract class AbstractProductSubject
     {

@@ -16,27 +16,28 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Behavioral\AbstractFactory\" />
-    <Folder Include="Behavioral\Builder\" />
-    <Folder Include="Behavioral\FactoryMethod\" />
-    <Folder Include="Behavioral\Singleton\" />
-    <Folder Include="Behavioral\Prototype\" />
-    <Folder Include="Creational\Adapter\" />
-    <Folder Include="Creational\Bridge\" />
-    <Folder Include="Creational\Composite\" />
-    <Folder Include="Creational\Decorator\" />
-    <Folder Include="Creational\Facade\" />
-    <Folder Include="Creational\Flyweight\" />
-    <Folder Include="Creational\Proxy\" />
-    <Folder Include="Structural\ChainOfResponsibility\" />
-    <Folder Include="Structural\Command\" />
-    <Folder Include="Structural\Interpreter\" />
-    <Folder Include="Structural\Iterator\" />
-    <Folder Include="Structural\Mediator\" />
-    <Folder Include="Structural\Memento\" />
-    <Folder Include="Structural\Visitor\" />
-    <Folder Include="Structural\TemplateMethod\" />
-    <Folder Include="Structural\State\" />
+    <Folder Include="Behavioral\Strategy\" />
+    <Folder Include="Creational\AbstractFactory\" />
+    <Folder Include="Creational\Builder\" />
+    <Folder Include="Creational\FactoryMethod\" />
+    <Folder Include="Creational\Singleton\" />
+    <Folder Include="Creational\Prototype\" />
+    <Folder Include="Structural\Adapter\" />
+    <Folder Include="Structural\Bridge\" />
+    <Folder Include="Structural\Composite\" />
+    <Folder Include="Structural\Decorator\" />
+    <Folder Include="Structural\Facade\" />
+    <Folder Include="Structural\Flyweight\" />
+    <Folder Include="Structural\Proxy\" />
+    <Folder Include="Behavioral\ChainOfResponsibility\" />
+    <Folder Include="Behavioral\Command\" />
+    <Folder Include="Behavioral\Interpreter\" />
+    <Folder Include="Behavioral\Iterator\" />
+    <Folder Include="Behavioral\Mediator\" />
+    <Folder Include="Behavioral\Memento\" />
+    <Folder Include="Behavioral\Visitor\" />
+    <Folder Include="Behavioral\TemplateMethod\" />
+    <Folder Include="Behavioral\State\" />
   </ItemGroup>
 
 </Project>

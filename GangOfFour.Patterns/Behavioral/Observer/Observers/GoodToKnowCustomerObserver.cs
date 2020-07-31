@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GangOfFour.Patterns.Structural.Observer.Subjects
+namespace GangOfFour.Patterns.Behavioral.Observer.Subjects
 {
     public class GoodToKnowCustomerObserver : IAbstractCustomerObserver
     {

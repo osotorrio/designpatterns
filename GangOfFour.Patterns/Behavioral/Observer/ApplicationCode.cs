@@ -1,8 +1,8 @@
-﻿using GangOfFour.Patterns.Structural.Observer.Subjects;
+﻿using GangOfFour.Patterns.Behavioral.Observer.Subjects;
 using System;
 using Xunit;
 
-namespace GangOfFour.Patterns.Structural.Observer
+namespace GangOfFour.Patterns.Behavioral.Observer
 {
     public class ApplicationCode
     {
