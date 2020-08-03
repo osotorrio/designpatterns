@@ -1,6 +1,5 @@
 # Design Patterns
 
-
 ## Creational Patterns
 
 -   Abstract Factory ?!
@@ -8,7 +7,6 @@
 -   Factory Method ?!
 -   Prototype
 -   Singleton ?!
-
 
 ## Structural Patterns
 
@@ -28,7 +26,7 @@
 -   Iterator
 -   Mediator ?!
 -   Memento
--   [Observer](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Structural/Observer): Use to notify a collection of objects that the internal state of another object has changed
+-   [Observer](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Behavioral/Observer): Use to notify a collection of objects that the internal state of another object has changed
 -   State
 -   Strategy
 -   Template Method

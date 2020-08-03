@@ -5,7 +5,13 @@ namespace GangOfFour.Patterns.Creational.FactoryMethod.Creators
 {
     public abstract class AbstractBanknoteCreator
     {
-        public List<AbstractBanknoteProduct> Banknotes { get; private set; }
+        public List<AbstractBanknoteProduct> Banknotes
+        {
+            get
+            {
+                return new List<AbstractBanknoteProduct>();
+            }
+        }
 
         public abstract void CreateBanknotesFactoryMethod();
     }

@@ -19,6 +19,7 @@
     <Folder Include="Behavioral\Strategy\" />
     <Folder Include="Creational\AbstractFactory\" />
     <Folder Include="Creational\Builder\" />
+    <Folder Include="Creational\FactoryMethod\img\" />
     <Folder Include="Creational\Singleton\" />
     <Folder Include="Creational\Prototype\" />
     <Folder Include="Structural\Adapter\" />
