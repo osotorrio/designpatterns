@@ -4,7 +4,7 @@
 
 -   Abstract Factory ?!
 -   Builder
--   [Factory Method](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/FactoryMethod): Use to move the responsibility and the knowledge of how to create objects out of your code.
+-   [Factory Method](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/FactoryMethod): Use to move out of your code the responsibility and the knowledge of how to create objects.
 -   Prototype
 -   Singleton ?!
 
