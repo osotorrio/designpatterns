@@ -61,7 +61,7 @@ namespace GangOfFour.Patterns.Structural.Composite
             programmingCourses.AddCurse(databases);
             programmingCourses.AddCurse(languages);
 
-            // Acting on a group of objects
+            // Acting on a group of objects at once
             var totalPrice = programmingCourses.CalculatePrice();
             totalPrice.ShouldBe(376.06m);
 
