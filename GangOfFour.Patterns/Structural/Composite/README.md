@@ -20,11 +20,11 @@ Compose objects into tree structures to represent part-whole hierarchies. Compos
 
 ### When to use this pattern?
 
-Anytime you have a collection of objects which can be represented as a hierarchical structure. And you need to thread, one single object (**leaf**) or a collections of single of objects (**composite**) the same way. 
+Anytime you have a collection of objects which can be represented as a hierarchical structure. And you need to treat, one single object (**leaf**) or a collections of single of objects (**composite**) the same way. 
 
 *Note: examples of hierarchical structures could be a family (grandfather, father, soon) or employees in a company (director, manager, worker)*
 
-*Note: To thread in the same way all objects in the hierarchical structure means to do an operation in all them without knowing if it is a leaf or a composite*
+*Note: To treat in the same way all objects in the hierarchical structure means to do an operation in all them without knowing if it is a leaf or a composite*
 
 ### Code example
 
