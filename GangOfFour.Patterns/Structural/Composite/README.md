@@ -16,6 +16,8 @@ Compose objects into tree structures to represent part-whole hierarchies. Compos
 - component object is just an abstraction that defines a common operation for composite and leaf objects
 - leaf objects cannot have children, leaf objects inherit from component object
 - composite objects also inherit from component object, but composite objects, by composition, have children of leaf objects
+- think about a **leaf** object like a single node in a tree of objects
+- think about a **composite** object like a branch in a tree of objects
 
 
 ### When to use this pattern?
