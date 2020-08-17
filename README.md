@@ -12,7 +12,7 @@
 
 -   Adapter
 -   Bridge
--   Composite
+-   [Composite](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Structural/Composite): Use in a hierarchical structure of objects to treat the same way individual nodes and whole branches of nodes.
 -   Decorator ?!
 -   Facade
 -   Flyweight
