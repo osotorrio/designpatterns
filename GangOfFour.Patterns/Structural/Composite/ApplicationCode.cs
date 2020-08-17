@@ -6,7 +6,7 @@ using Xunit;
 namespace GangOfFour.Patterns.Structural.Composite
 {
     /*
-         - Programming
+         - Programming Courses
          ---- Fundamentals
          ---- Databases
          -------- Sql
