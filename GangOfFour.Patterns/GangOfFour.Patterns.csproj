@@ -32,7 +32,6 @@
     <Folder Include="Behavioral\ChainOfResponsibility\" />
     <Folder Include="Behavioral\Command\" />
     <Folder Include="Behavioral\Interpreter\" />
-    <Folder Include="Behavioral\Iterator\" />
     <Folder Include="Behavioral\Mediator\" />
     <Folder Include="Behavioral\Memento\" />
     <Folder Include="Behavioral\Visitor\" />
