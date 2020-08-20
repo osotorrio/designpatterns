@@ -23,7 +23,7 @@ namespace GangOfFour.Patterns.Behavioral.Iterator.Aggregates
             {
                 var current = _list.First;
 
-                for (int i = 0; i < 2; i++)
+                for (int i = 1; i < 2; i++)
                 {
                     current = current.Next;
                 }
