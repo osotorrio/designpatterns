@@ -23,7 +23,7 @@
 -   Chain of Resposability ?!
 -   Command
 -   Interpreter
--   Iterator
+-   [Iterator](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Behavioral/Iterator): Use to have a common interface to access the items of different type of collections.
 -   Mediator ?!
 -   Memento
 -   [Observer](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Behavioral/Observer): Use to notify a collection of objects that the internal state of another object has changed
