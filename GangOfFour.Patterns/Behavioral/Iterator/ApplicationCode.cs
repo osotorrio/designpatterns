@@ -17,11 +17,11 @@ namespace GangOfFour.Patterns.Behavioral.Iterator
             positionalPlayers[0] = new Player("Jose Raul", "Capablanca");
             positionalPlayers[1] = new Player("Magnus", "Carlsen");
 
-            IterateCollection(attackingPlayers);
-            IterateCollection(positionalPlayers);
+            ClientCode(attackingPlayers);
+            ClientCode(positionalPlayers);
         }
 
-        private void IterateCollection(AbstractAggregate collection)
+        private void ClientCode(AbstractAggregate collection)
         {
             var iterator = collection.GetIterator();
 
