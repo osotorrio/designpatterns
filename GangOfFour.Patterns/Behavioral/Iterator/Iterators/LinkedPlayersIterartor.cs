@@ -19,7 +19,7 @@ namespace GangOfFour.Patterns.Behavioral.Iterator.Iterators
 
         public Player Next()
         {
-            return _collection[++_counter];
+            return _collection[_counter++];
         }
     }
 }

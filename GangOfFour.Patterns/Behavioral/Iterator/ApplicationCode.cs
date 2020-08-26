@@ -1,16 +1,19 @@
 ﻿using GangOfFour.Patterns.Behavioral.Iterator.Aggregates;
-using System;
+using Shouldly;
+using System.Collections.Generic;
 using Xunit;
 
 namespace GangOfFour.Patterns.Behavioral.Iterator
 {
     public class ApplicationCode
     {
+        private List<string> _players = new List<string>();
+
         [Fact]
         public void ExampleIteratorPattern()
         {
             var attackingPlayers = new ArrayPlayers();
-            attackingPlayers[0] = new Player("Mikhail", "Tal");
+            attackingPlayers[0] = new Player("Tal", "Mikhail");
             attackingPlayers[1] = new Player("Garry", "Kasparov");
 
             var positionalPlayers = new LinkedPlayers();
@@ -19,8 +22,18 @@ namespace GangOfFour.Patterns.Behavioral.Iterator
 
             ClientCode(attackingPlayers);
             ClientCode(positionalPlayers);
+
+            _players[0].ShouldBe("Mikhail, Tal");
+            _players[1].ShouldBe("Kasparov, Garry");
+            _players[2].ShouldBe("Capablanca, Jose Raul");
+            _players[3].ShouldBe("Carlsen, Magnus");
         }
 
+        /// <summary>
+        /// The client code knows how to loop any collection despite of having different data structure under the hood.
+        /// In this case under the hood we have ArrayList and LinkedList.
+        /// </summary>
+        /// <param name="collection">An abstract aggregate implementation</param>
         private void ClientCode(AbstractAggregate collection)
         {
             var iterator = collection.GetIterator();
@@ -28,8 +41,7 @@ namespace GangOfFour.Patterns.Behavioral.Iterator
             while (iterator.IsThereMore())
             {
                 var player = iterator.Next();
-
-                Console.WriteLine($"Welcome to {player.Surname}, {player.Name}");
+                _players.Add($"{player.Surname}, {player.Name}");
             }
         }
     }

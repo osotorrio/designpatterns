@@ -15,12 +15,12 @@ namespace GangOfFour.Patterns.Behavioral.Iterator.Iterators
 
         public bool IsThereMore()
         {
-            return _collection.Count < _counter;
+            return _collection.Count > _counter;
         }
 
         public Player Next()
         {
-            return _collection[++_counter];
+            return _collection[_counter++];
         }
     }
 }
