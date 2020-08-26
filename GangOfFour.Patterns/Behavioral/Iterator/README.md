@@ -30,5 +30,5 @@ Use this pattern to have a common way to access the elements of different type o
 ### Code example
 
 The code example demostrate how to access in the same way two different type of collections such as ArrayList and LinkedList.
-In this example we store names of chess players in two different type of list. But when we loop in both collections there are
+In this example we store names of chess players in two different type of collections. But when we loop through both collections there are
 not differences in how they are used.
