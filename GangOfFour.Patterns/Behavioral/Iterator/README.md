@@ -7,7 +7,7 @@ Provide a way to access the elements of an aggregate object sequentially without
 
 ### UML diagram
 
-![Source book: Design Patters, Elements of Reusable Object-Oriented Software](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Behavioral/Iterator/img/uml_diagram.png)
+![Source book: Design Patterns, Elements of Reusable Object-Oriented Software](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Behavioral/Iterator/img/uml_diagram.png)
 
 
 ### Diagram explained

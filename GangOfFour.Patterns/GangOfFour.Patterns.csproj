@@ -29,7 +29,6 @@
     <Folder Include="Structural\Decorator\" />
     <Folder Include="Structural\Facade\" />
     <Folder Include="Structural\Flyweight\" />
-    <Folder Include="Structural\Proxy\" />
     <Folder Include="Behavioral\ChainOfResponsibility\" />
     <Folder Include="Behavioral\Command\" />
     <Folder Include="Behavioral\Interpreter\" />
@@ -38,6 +37,7 @@
     <Folder Include="Behavioral\Visitor\" />
     <Folder Include="Behavioral\TemplateMethod\" />
     <Folder Include="Behavioral\State\" />
+    <Folder Include="Structural\Proxy\img\" />
   </ItemGroup>
 
 </Project>

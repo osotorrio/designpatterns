@@ -7,7 +7,7 @@ Define an interface for creating an object, but let subclasses decide which clas
 
 ### UML diagram
 
-![Source book: Design Patters, Elements of Reusable Object-Oriented Software](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Behavioral/Observer/img/uml_diagram.png)
+![Source book: Design Patterns, Elements of Reusable Object-Oriented Software](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Behavioral/Observer/img/uml_diagram.png)
 
 
 ### Diagram explained
