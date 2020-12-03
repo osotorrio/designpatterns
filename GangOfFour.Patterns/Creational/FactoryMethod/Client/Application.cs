@@ -11,10 +11,16 @@ namespace GangOfFour.Patterns.Creational.FactoryMethod.Client
         [InlineData(Countries.FR, AccountTypes.Standard, "Leroy Leblanc", 700.00)]
         public void CodeBeforePattern(Countries userInputCountry, AccountTypes userInputAccountType, string userInputName, decimal userInputAmount)
         {
-            var branch = new BranchBeforePattern(userInputCountry);
+            var creditCheck = new CreditCheck();
+            var branch = new BranchBeforePattern(creditCheck, userInputCountry);
             branch.OpenBankAccount(userInputAccountType, userInputName, userInputAmount);
         }
 
+        /// <summary>
+        /// Interesting enough, the application code gets more complex after applying the pattern.
+        /// In a real application the responsability to decide which factory to create would be delegated to an IoC container.
+        /// In this way, the application code would be almost the same before and after implementing the pattern.
+        /// </summary>
         [Theory]
         [InlineData(Countries.ES, AccountTypes.Business, "Jesus Sanchez", 500.00)]
         [InlineData(Countries.FR, AccountTypes.Standard, "Leroy Leblanc", 700.00)]
