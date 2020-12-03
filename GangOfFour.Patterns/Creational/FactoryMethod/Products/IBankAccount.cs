@@ -2,7 +2,7 @@
 {
     public interface IBankAccount
     {
-        bool OpenAccount(params string[] holders);
+        bool OpenAccount(string holder);
 
         void CreditAccount(decimal amount);
     }

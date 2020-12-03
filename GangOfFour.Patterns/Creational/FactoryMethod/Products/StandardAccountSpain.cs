@@ -9,7 +9,7 @@ namespace GangOfFour.Patterns.Creational.FactoryMethod.Products
             throw new NotImplementedException();
         }
 
-        public bool OpenAccount(params string[] holders)
+        public bool OpenAccount(string holder)
         {
             throw new NotImplementedException();
         }
