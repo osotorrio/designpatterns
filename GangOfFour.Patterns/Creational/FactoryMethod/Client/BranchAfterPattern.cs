@@ -3,7 +3,7 @@ using GangOfFour.Patterns.Creational.FactoryMethod.Stuff;
 
 namespace GangOfFour.Patterns.Creational.FactoryMethod.Client
 {
-    public class BranchAfterPattern
+    public class BranchAfterPattern : IBranch
     {
         private readonly BanckAccountFactory _factory;
 

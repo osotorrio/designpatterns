@@ -4,7 +4,7 @@ using System;
 
 namespace GangOfFour.Patterns.Creational.FactoryMethod.Client
 {
-    public class BranchBeforePattern
+    public class BranchBeforePattern : IBranch
     {
         private readonly Countries _country;
 
