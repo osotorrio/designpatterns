@@ -4,25 +4,18 @@ using System;
 
 namespace GangOfFour.Patterns.Creational.FactoryMethod.Creators
 {
-    public class BankAccountFranceFactory : BanckAccountFactory
+    public class SpanishBranch : DefaultBranch
     {
-        private readonly IRunCreditChecks _creditCheck;
-
-        public BankAccountFranceFactory(IRunCreditChecks creditCheck)
-        {
-            _creditCheck = creditCheck;
-        }
-
-        public override IBankAccount CreateBankAccountObject(AccountTypes accountType)
+        public override IBankAccount CreateBankAccount(AccountTypes accountType)
         {
             if (AccountTypes.Business == accountType)
             {
-                return new BusinessAccountFrance(_creditCheck);
+                return new BusinessAccountSpain();
             }
 
             if (AccountTypes.Standard == accountType)
             {
-                return new StandardAccountFrance(_creditCheck);
+                return new StandardAccountSpain();
             }
 
             throw new ArgumentException($"Unknown account type {accountType}", nameof(accountType));
