@@ -12,7 +12,7 @@ namespace GangOfFour.Patterns.Creational.FactoryMethod.Client
         [Theory]
         [InlineData(Countries.ES, AccountTypes.Business, "Jesus Sanchez", 500.00)]
         [InlineData(Countries.FR, AccountTypes.Standard, "Leroy Leblanc", 700.00)]
-        public void CodeAfterPattern(Countries userInputCountry, AccountTypes userInputAccountType, string userInputName, decimal userInputAmount)
+        public void ExampleFactoryMethodPattern(Countries userInputCountry, AccountTypes userInputAccountType, string userInputName, decimal userInputAmount)
         {
             DefaultBranch branch = null;
 

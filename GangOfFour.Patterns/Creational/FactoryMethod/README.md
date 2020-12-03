@@ -24,7 +24,7 @@ Use this pattern to delegate out of your framework the responsibility of instant
 *Note: Your framework (or client code) should not know how to create objects, it should know how to use them*
 
 
-### Code example
+### Application requirements
 
 Imagine you are writting some code for a printer. This printer print out banknotes from different countries.
 

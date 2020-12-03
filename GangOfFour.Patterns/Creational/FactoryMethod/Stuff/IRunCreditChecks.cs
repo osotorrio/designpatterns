@@ -9,7 +9,11 @@
     {
         public bool CheckHolder(string holder)
         {
-            throw new System.NotImplementedException();
+            /*
+                Here the code to run a security credit check on the account holder.
+            */
+
+            return true;
         }
     }
 }
