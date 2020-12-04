@@ -7,7 +7,7 @@ namespace GangOfFour.Patterns.Creational.FactoryMethod.Client
     public class Application
     {
         /// <summary>
-        /// In a real application the responsability to decide which factory (or branch) to create could be delegated to an IoC container
+        /// In a real application the responsability to decide which factory (or branch) to be created could be delegated to an IoC container
         /// </summary>
         [Theory]
         [InlineData(Countries.ES, AccountTypes.Business, "Jesus Sanchez", 500.00)]
