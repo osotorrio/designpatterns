@@ -33,11 +33,11 @@ _Note: Your framework (or client code) should not know how to create objects, it
 
 -   you are working in an application for a bank which has branches in Spain and France at the moment
 -   the bank offers only two type of accounts; business and stardard
--   [the application input parameters are: country code, type of account, customer name and initial amount](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Client/Application.cs)
--   when a new account is opened the application has to:
+-   [the application input parameters are](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Client/Application.cs): country code, type of account, customer name and initial amount
+-   when a new account is opened [the application has to](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Creators/DefaultBranch.cs):
 
-1. [open the account with the customer name](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Creators/DefaultBranch.cs)
-2. [credit the account so that the balance is not zero](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Creators/DefaultBranch.cs)
+1. open the account with the customer name
+2. credit the account so that the balance is not zero
 
--   [by legislation, accounts opened in France must run a security credit check on the customer before to open the account](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Creators/FrenchBranch.cs)
+-   by legislation, [accounts opened in France must run a security credit check](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Creators/FrenchBranch.cs) on the customer before to open the account
 -   [accounts opened in Spain don't need to run a credit check](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Creators/SpanishBranch.cs)
