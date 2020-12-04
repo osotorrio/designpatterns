@@ -32,9 +32,9 @@ _Note: Your framework (or client code) should not know how to create objects, it
 ### Application requirements
 
 -   you are working in an application for a bank which has branches in Spain and France at the moment
--   the bank offers only two type of accounts; business and stardard
+-   the bank offers only two type of accounts, business and stardard
 -   [the application input parameters are](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Client/Application.cs): country code, type of account, customer name and initial amount
--   when a new account is opened [the application has to](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Creators/DefaultBranch.cs):
+-   when a new account is opened [the application must](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Creators/DefaultBranch.cs):
 
 1. open the account with the customer name
 2. credit the account so that the balance is not zero
