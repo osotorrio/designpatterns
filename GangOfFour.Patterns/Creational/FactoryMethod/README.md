@@ -40,4 +40,4 @@ _Note: Your framework (or client code) should not know how to create objects, it
 2. Credit the account so that the balance is not zero.
 
 -   By legislation, [accounts opened in France must run a security credit check](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Creators/FrenchBranch.cs) on the customer before to open the account.
--   [Accounts opened in Spain don't need to run a credit check](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Creators/SpanishBranch.cs)
+-   [Accounts opened in Spain don't need to run a credit check](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Creators/SpanishBranch.cs).
