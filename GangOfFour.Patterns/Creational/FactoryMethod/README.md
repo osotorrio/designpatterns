@@ -27,7 +27,7 @@ Use Factory Method to separate product construction code from the code that actu
 
 Use Factory Method to extend the use of new products without modifying the core code of the base creator. Simply add a new subclass creator which will create the new products.
 
-_Note: Your framework (or client code) should not know how to create objects, it should know how to use them._
+_Note: Your client code should not know how to create objects, it should know how to use them._
 
 ### Application requirements
 
