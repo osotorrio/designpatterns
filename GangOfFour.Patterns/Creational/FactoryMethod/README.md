@@ -20,6 +20,16 @@ Define an interface for creating an object, but let subclasses decide which clas
     1. Implement the parent interface to create products.
     2. To know which product has to be created.
     3. To know how to created the product because each product could have different initialization requirements.
+    
+### Theory explained
+
+You have an object, called base creator, which needs to create other object, called product, to do some operations with it. There could be several different products, but all of them implement the same contract.
+
+This is important, in the Factory Method pattern, all products implement the same interface. Opposite to this is the Abstract Factory pattern, where there are group of product with different interfaces.
+
+The problem here is that the product, which ultimately would be used by the base creator, is going to be decided in run-time. For instance, depending on some user's input or some configuration value.
+
+It is also important to notice that the base creator only needs one product object to carry on its business logic. Which one would be used it is going to be decided by the children creators.
 
 ### When to use this pattern?
 
