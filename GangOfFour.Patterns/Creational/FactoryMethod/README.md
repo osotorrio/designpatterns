@@ -23,7 +23,7 @@ Define an interface for creating an object, but let subclasses decide which clas
     
 ### Theory explained
 
-You have an object, called base creator, which needs to create other object, called product, to do some operations with it. There could be several different products, but all of them implement the same contract.
+You have an object, called base creator, which needs to create another object, called product, to do some operations with it. There could be several different products, but all of them implement the same contract.
 
 This is important, in the Factory Method pattern, all products implement the same interface. Opposite to this is the Abstract Factory pattern, where there are group of product with different interfaces.
 
