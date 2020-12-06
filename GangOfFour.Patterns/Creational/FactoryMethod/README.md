@@ -12,7 +12,7 @@ Define an interface for creating an object, but let subclasses decide which clas
 
 -   There are 2 main actors, **products** and **creators**
 -   A **product** is an object we would like to use from a creator, for example, we want to call its methods.
--   A **creator** is an object which uses the product to do some business operations. In this case, the creator is the client code we dont want to change if new products are needed.
+-   A **creator** is an object which uses the product to do some business operations. In this case, the creator is the client code we dont want to change if new products are needed in the future.
 -   The **base creator** has 2 responsabilities:
     1. To know how to use a product to crarry on some business logic.
     2. To define an interface which allows its subclasses decide which product will be created.
