@@ -7,7 +7,7 @@ namespace GangOfFour.Patterns.Creational.FactoryMethod.Creators
     /// DefaultBranch creator knows the business operations open a bank account. By first calling OpenAccount() and then CreditAccount().
     /// This class allows its children to decide which type of account would be created.
     /// </summary>
-    public abstract class DefaultBranch
+    public abstract class AbstractBranch
     {
         public void OpenBankAccount(AccountTypes type, string holder, decimal amount)
         {

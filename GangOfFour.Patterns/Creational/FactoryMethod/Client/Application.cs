@@ -14,7 +14,7 @@ namespace GangOfFour.Patterns.Creational.FactoryMethod.Client
         [InlineData(Countries.FR, AccountTypes.Standard, "Leroy Leblanc", 700.00)]
         public void ExampleFactoryMethodPattern(Countries userInputCountry, AccountTypes userInputAccountType, string userInputName, decimal userInputAmount)
         {
-            DefaultBranch branch = null;
+            AbstractBranch branch = null;
 
             if (Countries.ES == userInputCountry)
             {
