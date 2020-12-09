@@ -1,48 +1,41 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Creational\AbstractFactory\Factories\Products\**" />
-    <EmbeddedResource Remove="Creational\AbstractFactory\Factories\Products\**" />
-    <None Remove="Creational\AbstractFactory\Factories\Products\**" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
+		<PackageReference Include="nsubstitute" Version="4.2.2" />
+		<PackageReference Include="shouldly" Version="3.0.2" />
+		<PackageReference Include="xbehave" Version="2.4.1" />
+		<PackageReference Include="xunit.runner.visualstudio" Version="2.4.2">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
-    <PackageReference Include="nsubstitute" Version="4.2.2" />
-    <PackageReference Include="shouldly" Version="3.0.2" />
-    <PackageReference Include="xbehave" Version="2.4.1" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.2">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Behavioral\Iterator\img\" />
-    <Folder Include="Behavioral\Strategy\" />
-    <Folder Include="Creational\AbstractFactory\Client\" />
-    <Folder Include="Creational\Builder\" />
-    <Folder Include="Creational\Singleton\" />
-    <Folder Include="Creational\Prototype\" />
-    <Folder Include="Structural\Adapter\" />
-    <Folder Include="Structural\Bridge\" />
-    <Folder Include="Structural\Composite\img\" />
-    <Folder Include="Structural\Decorator\" />
-    <Folder Include="Structural\Facade\" />
-    <Folder Include="Structural\Flyweight\" />
-    <Folder Include="Behavioral\ChainOfResponsibility\" />
-    <Folder Include="Behavioral\Command\" />
-    <Folder Include="Behavioral\Interpreter\" />
-    <Folder Include="Behavioral\Mediator\" />
-    <Folder Include="Behavioral\Memento\" />
-    <Folder Include="Behavioral\Visitor\" />
-    <Folder Include="Behavioral\TemplateMethod\" />
-    <Folder Include="Behavioral\State\" />
-    <Folder Include="Structural\Proxy\img\" />
-  </ItemGroup>
+	<ItemGroup>
+		<Folder Include="Behavioral\Iterator\img\" />
+		<Folder Include="Behavioral\Strategy\" />
+		<Folder Include="Creational\Builder\" />
+		<Folder Include="Creational\Singleton\" />
+		<Folder Include="Creational\Prototype\" />
+		<Folder Include="Structural\Adapter\" />
+		<Folder Include="Structural\Bridge\" />
+		<Folder Include="Structural\Composite\img\" />
+		<Folder Include="Structural\Decorator\" />
+		<Folder Include="Structural\Facade\" />
+		<Folder Include="Structural\Flyweight\" />
+		<Folder Include="Behavioral\ChainOfResponsibility\" />
+		<Folder Include="Behavioral\Command\" />
+		<Folder Include="Behavioral\Interpreter\" />
+		<Folder Include="Behavioral\Mediator\" />
+		<Folder Include="Behavioral\Memento\" />
+		<Folder Include="Behavioral\Visitor\" />
+		<Folder Include="Behavioral\TemplateMethod\" />
+		<Folder Include="Behavioral\State\" />
+		<Folder Include="Structural\Proxy\img\" />
+	</ItemGroup>
 
 </Project>
