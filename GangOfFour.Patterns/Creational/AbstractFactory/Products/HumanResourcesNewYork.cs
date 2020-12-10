@@ -4,7 +4,7 @@ namespace GangOfFour.Patterns.Creational.AbstractFactory.Products
 {
     public class HumanResourcesNewYork : IHumanResourcesDepartment
     {
-        public void KickOffEmployeeOnboarding()
+        public void KickOffEmployeeOnboarding(string employee)
         {
             throw new NotImplementedException();
         }

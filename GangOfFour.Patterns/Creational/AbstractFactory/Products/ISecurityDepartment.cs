@@ -1,7 +1,9 @@
-﻿namespace GangOfFour.Patterns.Creational.AbstractFactory.Products
+﻿using GangOfFour.Patterns.Creational.AbstractFactory.Stuff;
+
+namespace GangOfFour.Patterns.Creational.AbstractFactory.Products
 {
     public interface ISecurityDepartment
     {
-        void RequestOfficeSecurityCredentials();
+        void RequestOfficeSecurityCredentials(string employee, JobTitles jobTitle);
     }
 }

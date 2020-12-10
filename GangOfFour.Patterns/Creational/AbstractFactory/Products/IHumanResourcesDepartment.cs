@@ -2,6 +2,6 @@
 {
     public interface IHumanResourcesDepartment
     {
-        void KickOffEmployeeOnboarding();
+        void KickOffEmployeeOnboarding(string employee);
     }
 }
