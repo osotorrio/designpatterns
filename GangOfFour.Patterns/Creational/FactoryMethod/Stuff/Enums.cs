@@ -5,10 +5,4 @@
         Standard,
         Business
     }
-
-    public enum Countries
-    {
-        ES,
-        FR
-    }
 }

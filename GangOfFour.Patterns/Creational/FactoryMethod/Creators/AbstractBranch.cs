@@ -4,8 +4,9 @@ using GangOfFour.Patterns.Creational.FactoryMethod.Stuff;
 namespace GangOfFour.Patterns.Creational.FactoryMethod.Creators
 {
     /// <summary>
-    /// DefaultBranch creator knows the business operations open a bank account. By first calling OpenAccount() and then CreditAccount().
-    /// This class allows its children to decide which type of account would be created.
+    /// DefaultBranch creator knows the business operations to open a bank account. 
+    /// By first calling OpenAccount() and then CreditAccount().
+    /// This class allows its children to decide which type of account will be created.
     /// </summary>
     public abstract class AbstractBranch
     {

@@ -1,5 +1,6 @@
 ﻿using GangOfFour.Patterns.Creational.FactoryMethod.Creators;
 using GangOfFour.Patterns.Creational.FactoryMethod.Stuff;
+using System.Collections.Generic;
 using Xunit;
 
 namespace GangOfFour.Patterns.Creational.FactoryMethod.Client
@@ -7,27 +8,25 @@ namespace GangOfFour.Patterns.Creational.FactoryMethod.Client
     public class Application
     {
         /// <summary>
-        /// In a real application the responsability to decide which factory (or branch) to be created could be delegated to an IoC container
+        /// The application only knows it gets injected an abstract branch and some input parameters.
         /// </summary>
+        
         [Theory]
-        [InlineData(Countries.ES, AccountTypes.Business, "Jesus Sanchez", 500.00)]
-        [InlineData(Countries.FR, AccountTypes.Standard, "Leroy Leblanc", 700.00)]
-        public void ExampleFactoryMethodPattern(Countries userInputCountry, AccountTypes userInputAccountType, string userInputName, decimal userInputAmount)
+        [MemberData(nameof(InjectDependencies))]
+        public void ExampleFactoryMethodPattern(AbstractBranch branch, AccountTypes accountType, string holder, decimal amount)
         {
-            AbstractBranch branch = null;
+            branch.OpenBankAccount(accountType, holder, amount);
+        }
 
-            if (Countries.ES == userInputCountry)
+        public static IEnumerable<object[]> InjectDependencies()
+        {
+            var creditCheck = new CreditCheck();
+
+            return new List<object[]>
             {
-                branch = new SpanishBranch();
-            }
-
-            if (Countries.FR == userInputCountry)
-            {
-                var creditCheck = new CreditCheck();
-                branch = new FrenchBranch(creditCheck);
-            }
-
-            branch.OpenBankAccount(userInputAccountType, userInputName, userInputAmount);
+                new object[] { new SpanishBranch(), AccountTypes.Business, "Jesus Sanchez", 500.00 },
+                new object[] { new FrenchBranch(creditCheck), AccountTypes.Standard, "Leroy Leblanc", 700.00 }
+            };
         }
     }
 }
