@@ -3,7 +3,6 @@
     public enum JobTitles
     {
         Developer,
-        Manager,
         Director
     }
 }

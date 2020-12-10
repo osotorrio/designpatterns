@@ -1,5 +1,4 @@
 ﻿using GangOfFour.Patterns.Creational.AbstractFactory.Stuff;
-using System;
 
 namespace GangOfFour.Patterns.Creational.AbstractFactory.Products
 {
@@ -7,7 +6,25 @@ namespace GangOfFour.Patterns.Creational.AbstractFactory.Products
     {
         public void RequestLaptopSetup(JobTitles jobTitle)
         {
-            throw new NotImplementedException();
+            if (JobTitles.Developer == jobTitle)
+            {
+                BuyMobileWorkStation();
+                RequestTwoMonitors();
+            }
+
+            if (JobTitles.Director == jobTitle)
+            {
+                BuyLaptop();
+                RequestOneMonitor();
+            }
         }
+
+        private static void BuyMobileWorkStation() { }
+
+        private static void RequestTwoMonitors() { }
+
+        private static void BuyLaptop() { }
+
+        private static void RequestOneMonitor(){ }
     }
 }
