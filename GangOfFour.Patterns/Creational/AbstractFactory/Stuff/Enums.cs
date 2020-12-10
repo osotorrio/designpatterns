@@ -6,10 +6,4 @@
         Manager,
         Director
     }
-
-    public enum OfficeLocations
-    {
-        London,
-        NewYork
-    }
 }
