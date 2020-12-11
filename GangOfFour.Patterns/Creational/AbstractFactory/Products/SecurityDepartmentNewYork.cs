@@ -1,5 +1,4 @@
 ﻿using GangOfFour.Patterns.Creational.AbstractFactory.Stuff;
-using System;
 
 namespace GangOfFour.Patterns.Creational.AbstractFactory.Products
 {
