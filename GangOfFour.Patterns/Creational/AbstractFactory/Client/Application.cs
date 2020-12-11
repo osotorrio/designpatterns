@@ -22,7 +22,7 @@ namespace GangOfFour.Patterns.Creational.AbstractFactory.Client
 
             hrDepartment.KickOffEmployeeOnboarding(employee);
             securityDepartment.RequestOfficeSecurityCredentials(employee, jobTitle);
-            purchasingDepartment.RequestLaptopSetup(jobTitle);
+            purchasingDepartment.RequestDeskSetup(jobTitle);
         }
 
         public static IEnumerable<object[]> InjectDependencies()

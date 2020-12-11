@@ -2,7 +2,7 @@
 
 namespace GangOfFour.Patterns.Creational.AbstractFactory.Products
 {
-    public class HumanResourcesLondon : IHumanResourcesDepartment
+    public class HumanResourcesDepartmentLondon : IHumanResourcesDepartment
     {
         public void KickOffEmployeeOnboarding(string employee)
         {

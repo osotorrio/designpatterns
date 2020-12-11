@@ -2,29 +2,32 @@
 
 namespace GangOfFour.Patterns.Creational.AbstractFactory.Products
 {
+    /// <summary>
+    /// Purchasing department in London has a specific way of handling a laptop request which is different from any other office.
+    /// </summary>
     public class PurchasingDepartmentLondon : IPurchasingDepartment
     {
-        public void RequestLaptopSetup(JobTitles jobTitle)
+        public void RequestDeskSetup(JobTitles jobTitle)
         {
             if (JobTitles.Developer == jobTitle)
             {
-                BuyHighSpeedLaptop();
-                BuyBigCurvedScreen();
+                PurchaseHighSpeedLaptop();
+                PurchaseBigCurvedScreen();
             }
 
             if (JobTitles.Director == jobTitle)
             {
-                BuyDesktopComputer();
-                BuySmallScreen();
+                PurchaseDesktopComputer();
+                PurchaseSmallScreen();
             }
         }
 
-        private static void BuySmallScreen() { }
+        private static void PurchaseSmallScreen() { }
 
-        private static void BuyDesktopComputer() { }
+        private static void PurchaseDesktopComputer() { }
 
-        private static void BuyBigCurvedScreen() { }
+        private static void PurchaseBigCurvedScreen() { }
 
-        private static void BuyHighSpeedLaptop() { }
+        private static void PurchaseHighSpeedLaptop() { }
     }
 }

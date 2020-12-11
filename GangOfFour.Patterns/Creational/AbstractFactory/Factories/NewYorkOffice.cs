@@ -3,11 +3,14 @@ using System;
 
 namespace GangOfFour.Patterns.Creational.AbstractFactory.Factories
 {
+    /// <summary>
+    /// NewYorkOffice factory is only responsible for creating departments from the New York office
+    /// </summary>
     public class NewYorkOffice : IAbstractOffice
     {
         public IHumanResourcesDepartment CreateHumanResourcesDeparment()
         {
-            return new HumanResourcesNewYork();
+            return new HumanResourcesDepartmentNewYork();
         }
 
         public IPurchasingDepartment CreatePurchasingDepartment()
