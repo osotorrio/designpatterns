@@ -4,7 +4,7 @@
 
 -   [Abstract Factory](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/AbstractFactory): Use when your code needs to use a family of related objects and you don't want to change your code when a new familly is added to the system.
 -   Builder
--   [Factory Method](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/FactoryMethod): Use to move out of the client code the responsibility and the knowledge of how to create objects.
+-   [Factory Method](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/FactoryMethod): Use to move out of your code the responsibility and the knowledge of how to create objects.
 -   Prototype
 -   Singleton ?!
 

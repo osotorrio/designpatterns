@@ -42,11 +42,11 @@ Use Abstract Factory to be able to decide in runtime which familly of related ob
 
 -   You are working in an office management application.
 
--   The company you are creating the application for has at this moment an office in London and another one in New York.
+-   The company you are creating the application for has at this moment an [office in London](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/AbstractFactory/Factories/LondonOffice.cs) and an [office in New York](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/AbstractFactory/Factories/NewYorkOffice.cs).
 
 -   You have to write code to manage the onboarding process of a new employee in the company.
 
--   When there is a new employee 3 processes have to be started.
+-   When there is a new employee [3 processes have to be started](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/AbstractFactory/Client/Application.cs).
 
     1. HR department will kickoff the onboarding process.
     2. Purchasing department will buy desk equipment for the new employee.

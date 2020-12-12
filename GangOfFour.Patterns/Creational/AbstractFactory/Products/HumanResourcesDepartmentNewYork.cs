@@ -8,11 +8,11 @@
         public void KickOffEmployeeOnboarding(string employee)
         {
             PrintOutPolicyCompanyDocuments(employee);
-            ScheduleTeamDrinks();
+            ScheduleTeamPresentationMetting();
         }
 
         private void PrintOutPolicyCompanyDocuments(string employee) { }
 
-        private void ScheduleTeamDrinks() { }
+        private void ScheduleTeamPresentationMetting() { }
     }
 }
