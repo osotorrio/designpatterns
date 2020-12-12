@@ -32,24 +32,24 @@ _Note: Your client code should not know how to create objects, it should know ho
 
 ### When to use this pattern?
 
-Use Abstract Factory when your code needs to work serveral families of related objects.
+Use Abstract Factory when your code needs to work with serveral families of related objects.
 
-Use Abstract Factory to add more families of objects without changing your code.
+Use Abstract Factory to add more families of related objects without changing your code.
 
-Use Abstract Factory to be able to decide in runtime which familly of objects will be use.
+Use Abstract Factory to be able to decide in runtime which familly of related objects will be use.
 
 ### Application requirements
 
 -   You are working in an office management application.
 
--   The company you are creating the application for has, at this moment, an office in London and another one in New York.
+-   The company you are creating the application for has at this moment an office in London and another one in New York.
 
 -   You have to write code to manage the onboarding process of a new employee in the company.
 
 -   When there is a new employee 3 processes have to be started.
 
-1. HR department will kickoff the onboarding process.
-2. Purchasing department will buy desk equipment for the new employee.
-3. Security department has to request credential access to the building for the new employee.
+    1. HR department will kickoff the onboarding process.
+    2. Purchasing department will buy desk equipment for the new employee.
+    3. Security department has to request credential access to the building for the new employee.
 
--   Each office manages these processes in different ways.
+-   Each office manages internally each of these processes in different ways.
