@@ -24,9 +24,9 @@ These objects, even though they are completely different to each other, they sti
 
 Normaly there is not only one family of objects. There could be several families of objects. For example, one family of buttons and textboxes for Android phones. Another family of buttons and textboxes for an iPhone. Each family, or variant, has different mechanisms to render in the UI.
 
-These is important, a button for an Android could have the same methods that a button for an iPhone. But internally they will have different ways to render in the specific UI.
+This is important, a button for an Android could have the same methods that a button for an iPhone, they share the same contract. But internally they will have different ways to render in the specific UI.
 
-The whole point of this pattern is to abstract the client away from the internal specific implementations of the products. The client would know it is using a product, but it would never know how the product is doing its job. This is possible thanks to the abstract factories.
+The client code use the abstract factories to create the difference families of object. Each specific abstract factory is in charge of the creation of the objects of a specific family.
 
 _Note: Your client code should not know how to create objects, it should know how to use them._
 
@@ -34,7 +34,7 @@ _Note: Your client code should not know how to create objects, it should know ho
 
 Use Abstract Factory when your code needs to work with serveral families of related objects.
 
-Use Abstract Factory to add more families of related objects without changing your code.
+Use Abstract Factory to add more families of related objects without modifying your code.
 
 Use Abstract Factory to be able to decide in runtime which familly of related objects will be use.
 
