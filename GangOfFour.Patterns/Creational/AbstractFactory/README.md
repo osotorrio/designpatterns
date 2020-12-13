@@ -12,19 +12,24 @@ Provide an interface for creating families of related or dependent objects witho
 
 -   There are 3 main actors, **client**, **factories** and **products**
 -   **Products** are objects which we would like to use from the client code. These products come in sets or families. A family of products are in some way conceptually related.
--   The **client** code is an object which uses a family of products to do some business logic. We don't not like to modify the client code if a new family of products is added in the future.
--   In general, the only responsibility of the **abstract factory** is to define a contract. This contract is used by the client code to obtain the family of products needed to deal with its business operations.
+-   The **client** code is an object which uses a family of products to do some business logic. We don't want to modify the client code if a new family of products is added in the future.
+-   In general, the only responsibility of the **abstract factory** is to define a contract. This contract is used by the client code to obtain the family of products needed to deal with its business logic.
 -   Each **Concrete factory** knows exactly which set of products will make a family. The concrete factory has the responsibility to create that family of products.
 
-### Clues to recognize this pattern
+### Clues to recognize Abstract Factory pattern
 
-In this pattern you would have a high-level concept or theme which is composed of several objects. For instance, an user interface in a mobile phone is composed of different objects like buttons, text boxes, etc. A house is composed of different objects like windows, doors, walls, etc.
+1. You have a high-level concept or theme which is composed of several objects. For instance:
 
-These objects which compose the high-level concept, even though they are completely different to each other, they still form a family of objects because they are conceptually related.
+    - An user interface in a mobile phone is composed of different objects like buttons, text boxes, etc.
+    - A house is composed of different objects like windows, doors, walls, etc.
 
-Most probably it would be more than one family of objects. Or at least, the possibility of including more families in the future. For example, one family of buttons and text boxes for Android phones. Another family of buttons and text boxes for an iPhone. Each family, or variant, has different mechanisms to render in the UI.
+2. This familly of objects, which compose the high-level concept, they share the same contract. For instance:
 
-This is important, a button for an Android could have the same methods that a button for an iPhone, they share the same contract. But internally they will have different ways to render in the specific UI.
+    - A button in an Android application will have the same contract than a button in a iPhone application. Internally they render in different ways.
+    - A door in a mansion have the same contract than a door in an appartment. Internally they could open in different ways.
+
+3. Thre is more than one type of family of objects, also called variants or themes. Or at least, there is the possibility of including more families with time.
+    - Using Abstract Factory will avoid to change the client code when a new familly or theme is added to the system.
 
 ### When to use this pattern?
 
