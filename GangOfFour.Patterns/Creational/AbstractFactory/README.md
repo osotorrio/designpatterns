@@ -32,7 +32,7 @@ Use Abstract Factory when your code needs to work with several families of relat
 
 Use Abstract Factory to add more families of related objects without modifying your code.
 
-Use Abstract Factory to be able to decide in runtime which family of related objects will be use.
+Use Abstract Factory to be able to decide in runtime which family of related objects will be used.
 
 _Note: Your client code should not know how to create objects, it should know how to use them._
 
@@ -50,6 +50,6 @@ _Note: Your client code should not know how to create objects, it should know ho
     2. Purchasing department will buy desk equipment for the new employee.
     3. Security department has to request credential access to the building for the new employee.
 
--   Each office manages internally each of these processes in different ways. For instance, HR department in London office has different internal processes than HR department in New York.
+-   Each office manages internally each of these processes in different ways. For instance, [security department in London](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/AbstractFactory/Products/SecurityDepartmentLondon.cs) office has different internal processes than [security department in New York](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/AbstractFactory/Products/SecurityDepartmentNewYork.cs).
 
 -   [The application input parameters are](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/AbstractFactory/Client/Application.cs): an abstract office, employee name and employee job title.

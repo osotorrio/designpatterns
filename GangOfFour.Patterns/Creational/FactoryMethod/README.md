@@ -21,7 +21,7 @@ Define an interface for creating an object, but let subclasses decide which clas
     2. To know which product has to be created.
     3. To know how to created the product because each product could have different initialization requirements.
 
-### Theory explained
+### Clues to recognize this pattern
 
 You have an object, called base creator, which needs to create another object, called product, to do some operations with it. There could be several different products, but all of them implement the same contract.
 
