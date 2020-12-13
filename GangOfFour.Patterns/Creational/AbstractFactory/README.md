@@ -18,17 +18,17 @@ Provide an interface for creating families of related or dependent objects witho
 
 ### Clues to recognize Abstract Factory pattern
 
-1. **You have a high-level concept** or theme which is **composed of several objects**. For instance:
+1. **You have a high-level concept or theme which is composed of several objects**. For instance:
 
     - An user interface in a mobile phone is composed of different objects like buttons, text boxes, etc.
     - A house is composed of different objects like windows, doors, walls, etc.
 
-2. **This familly of objects**, which compose the high-level concept, **they share the same contract**. For instance:
+2. **This familly of objects, which compose the high-level concept, they share the same contract**. For instance:
 
     - A button in an Android application will have the same contract than a button in a iPhone application. Internally they render in different ways.
     - A door in a mansion have the same contract than a door in an appartment. Internally they could open in different ways.
 
-3. **There is more than one type of family of objects, also called variants or themes**. Or at least, there is the possibility of including more families with time. For instance:
+3. **There are more than one type of family of objects, also called variants or themes**. Or at least, there is the possibility of including more families with time. For instance:
 
     - Type of houses like apartment, condo, colonial, cottage, mediterranean, etc
     - Using Abstract Factory will avoid to change the client code when a new familly or theme is added to the system.
