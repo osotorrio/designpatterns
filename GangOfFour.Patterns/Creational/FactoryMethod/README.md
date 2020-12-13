@@ -36,14 +36,6 @@ Define an interface for creating an object, but let subclasses decide which clas
    - Books, desks and lamps must have the same public methods used to update the inventory.
    - Trucks, ships and planes must have the same public methods to deliver goods.
 
-There could be several different products, but all of them implement the same contract.
-
-This is important, in the Factory Method pattern, all products implement the same interface. Opposite to this is the Abstract Factory pattern, where there are group of family products with different interfaces.
-
-The problem here is that the product, which ultimately would be used by the base creator, is going to be decided in run-time. For instance, depending on some user's input or some configuration value.
-
-It is also important to notice that the base creator only needs one product object to carry on its business logic. Which one would be used it is going to be decided by the children creators.
-
 ### When to use this pattern?
 
 Use Factory Method to separate product construction code from the code that actually uses the product.
