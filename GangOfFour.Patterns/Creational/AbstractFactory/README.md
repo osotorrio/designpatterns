@@ -51,7 +51,7 @@ _Note: Your client code should not know how to create objects, it should know ho
 
 -   You have to write code to manage the onboarding process of a new employee in the company.
 
--   When a new employee is hired, [3 processes have to be started in each office](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/AbstractFactory/Client/Application.cs).
+-   When a new employee is hired for an office, [3 processes have to be started in the office](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/AbstractFactory/Client/Application.cs).
 
     1. HR department will kickoff the onboarding process.
     2. Purchasing department will buy desk equipment for the new employee.
