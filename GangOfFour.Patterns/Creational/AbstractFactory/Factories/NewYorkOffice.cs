@@ -8,7 +8,7 @@ namespace GangOfFour.Patterns.Creational.AbstractFactory.Factories
     /// </summary>
     public class NewYorkOffice : IAbstractOffice
     {
-        public IHumanResourcesDepartment CreateHumanResourcesDeparment()
+        public IHumanResourcesDepartment CreateHumanResourcesDepartment()
         {
             return new HumanResourcesDepartmentNewYork();
         }

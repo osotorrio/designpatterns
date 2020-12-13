@@ -16,7 +16,7 @@ namespace GangOfFour.Patterns.Creational.AbstractFactory.Client
         [MemberData(nameof(InjectDependencies))]
         public void ExampleAbstractFactory(IAbstractOffice office, string employee, JobTitles jobTitle)
         {
-            var hrDepartment = office.CreateHumanResourcesDeparment();
+            var hrDepartment = office.CreateHumanResourcesDepartment();
             var securityDepartment = office.CreateSecurityDepartment();
             var purchasingDepartment = office.CreatePurchasingDepartment();
 

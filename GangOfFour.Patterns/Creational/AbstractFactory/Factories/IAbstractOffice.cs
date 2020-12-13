@@ -4,7 +4,7 @@ namespace GangOfFour.Patterns.Creational.AbstractFactory.Factories
 {
     public interface IAbstractOffice
     {
-        IHumanResourcesDepartment CreateHumanResourcesDeparment();
+        IHumanResourcesDepartment CreateHumanResourcesDepartment();
 
         ISecurityDepartment CreateSecurityDepartment();
 
