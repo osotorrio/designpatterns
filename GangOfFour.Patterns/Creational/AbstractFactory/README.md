@@ -22,7 +22,7 @@ In this pattern the client code is a high-level concept or theme which is compos
 
 These objects, even though they are completely different to each other, they still form a family of objects because they are conceptually related.
 
-Normaly there is not only one family of objects. There could be several families of objects. For example, one family of buttons and textboxes for Android phones. Another family of buttons and textboxes for an iPhone. Each family, or variant, has different mechanisms to render in the UI.
+Normally there is not only one family of objects. There could be several families of objects. For example, one family of buttons and textboxes for Android phones. Another family of buttons and textboxes for an iPhone. Each family, or variant, has different mechanisms to render in the UI.
 
 This is important, a button for an Android could have the same methods that a button for an iPhone, they share the same contract. But internally they will have different ways to render in the specific UI.
 
@@ -54,4 +54,4 @@ Use Abstract Factory to be able to decide in runtime which family of related obj
 
 -   Each office manages internally each of these processes in different ways.
 
--   [The application input parameters are](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/AbstractFactory/Client/Application.cs): country code, type of account, customer name and initial amount.
+-   [The application input parameters are](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/AbstractFactory/Client/Application.cs): an abstract office, employee name and employee job title.
