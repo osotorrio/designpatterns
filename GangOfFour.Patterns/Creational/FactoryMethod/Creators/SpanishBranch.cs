@@ -4,9 +4,6 @@ using System;
 
 namespace GangOfFour.Patterns.Creational.FactoryMethod.Creators
 {
-    /// <summary>
-    /// SpanishBranch creator knows which Spanish account has to be created.
-    /// </summary>
     public class SpanishBranch : AbstractBranch
     {
         public override IBankAccount CreateBankAccount(AccountTypes accountType)

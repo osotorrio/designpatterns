@@ -20,7 +20,7 @@ namespace GangOfFour.Patterns.Creational.FactoryMethod.Products
             /*
                 Here the code to register a new bank account with the holder name. For instance:
 
-                repository.Save(AccountId, holder);
+                repository.CreateAccount(AccountId, holder);
              */
 
             return true;

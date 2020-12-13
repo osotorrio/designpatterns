@@ -7,10 +7,6 @@ namespace GangOfFour.Patterns.Creational.FactoryMethod.Client
 {
     public class Application
     {
-        /// <summary>
-        /// The application only knows it gets injected an abstract branch and some input parameters.
-        /// </summary>
-        
         [Theory]
         [MemberData(nameof(InjectDependencies))]
         public void ExampleFactoryMethodPattern(AbstractBranch branch, AccountTypes accountType, string holder, decimal amount)

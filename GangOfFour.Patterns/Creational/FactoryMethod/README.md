@@ -23,7 +23,20 @@ Define an interface for creating an object, but let subclasses decide which clas
 
 ### Clues to recognize this pattern
 
-You have an object, called base creator, which needs to create another object, called product, to do some operations with it. There could be several different products, but all of them implement the same contract.
+1. **You have a high-level object which use another object to execute some business logic with it**. For instance:
+   
+   - A warehouse object use a new product object to update the inventory.
+   - A logistic object use a truck to ship goods to customers.
+
+2. **There are several different types of objects needed by the hight-level object**. For instance:
+   - For a warehouse we could have books, desks, lamps, etc.
+   - For a logistic object we could have trucks, ships, planes, etc
+
+3. **All these types of objects have the same contract**. For instance:
+   - Books, desks and lamps must have the same public methods used to update the inventory.
+   - Trucks, ships and planes must have the same public methods to deliver goods.
+
+There could be several different products, but all of them implement the same contract.
 
 This is important, in the Factory Method pattern, all products implement the same interface. Opposite to this is the Abstract Factory pattern, where there are group of family products with different interfaces.
 
