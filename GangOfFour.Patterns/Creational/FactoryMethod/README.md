@@ -48,7 +48,7 @@ _Note: Your client code should not know how to create objects, it should know ho
 
 -   You are working in an application for a bank which has branches in Spain and France at the moment.
 -   The bank offers only two type of accounts, business and standard
--   When a new account is opened [the application must](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Creators/DefaultBranch.cs):
+-   When a new account is opened [the application must](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Creators/AbstractBranch.cs):
 
     1. Open the account with the customer name.
     2. Credit the account so that the balance is not zero.
