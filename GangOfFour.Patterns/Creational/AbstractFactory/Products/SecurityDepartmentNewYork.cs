@@ -2,9 +2,6 @@
 
 namespace GangOfFour.Patterns.Creational.AbstractFactory.Products
 {
-    /// <summary>
-    /// Security department in New York has a specific access control to the building which is different from any other office.
-    /// </summary>
     public class SecurityDepartmentNewYork : ISecurityDepartment
     {
         public void RequestOfficeSecurityCredentials(string employee, JobTitles jobTitle)

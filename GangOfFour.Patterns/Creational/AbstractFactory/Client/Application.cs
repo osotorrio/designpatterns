@@ -7,11 +7,6 @@ namespace GangOfFour.Patterns.Creational.AbstractFactory.Client
 {
     public class Application
     {
-        /// <summary>
-        /// The application code only knows it gets injected an abstract office and some input parameters.
-        /// It doesn't really know which office is using neither what exactly the office is doing under the hood.
-        /// </summary>
-        
         [Theory]
         [MemberData(nameof(InjectDependencies))]
         public void ExampleAbstractFactory(IAbstractOffice office, string employee, JobTitles jobTitle)

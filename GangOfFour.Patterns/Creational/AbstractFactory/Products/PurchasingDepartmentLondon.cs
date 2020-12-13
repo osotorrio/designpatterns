@@ -2,9 +2,6 @@
 
 namespace GangOfFour.Patterns.Creational.AbstractFactory.Products
 {
-    /// <summary>
-    /// Purchasing department in London has a specific way of handling a laptop request which is different from any other office.
-    /// </summary>
     public class PurchasingDepartmentLondon : IPurchasingDepartment
     {
         public void RequestDeskSetup(JobTitles jobTitle)

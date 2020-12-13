@@ -59,4 +59,4 @@ _Note: Your client code should not know how to create objects, it should know ho
 
 -   Each office manages internally each of these processes in different ways. For instance, [security department in London](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/AbstractFactory/Products/SecurityDepartmentLondon.cs) office has different internal processes than [security department in New York](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/AbstractFactory/Products/SecurityDepartmentNewYork.cs).
 
--   [The application input parameters are](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/AbstractFactory/Client/Application.cs): an abstract office, employee name and employee job title.
+-   [The application input parameters are](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/AbstractFactory/Client/Application.cs): an abstract office, employee name and employee's job title.
