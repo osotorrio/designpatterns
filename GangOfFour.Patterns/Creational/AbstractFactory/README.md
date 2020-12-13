@@ -22,7 +22,7 @@ In this pattern you would have a high-level concept or theme which is composed o
 
 These objects which compose the high-level concept, even though they are completely different to each other, they still form a family of objects because they are conceptually related.
 
-Most probably would be more than one family of objects. Or at least, the possibility of including more families in the future. For example, one family of buttons and text boxes for Android phones. Another family of buttons and text boxes for an iPhone. Each family, or variant, has different mechanisms to render in the UI.
+Most probably it would be more than one family of objects. Or at least, the possibility of including more families in the future. For example, one family of buttons and text boxes for Android phones. Another family of buttons and text boxes for an iPhone. Each family, or variant, has different mechanisms to render in the UI.
 
 This is important, a button for an Android could have the same methods that a button for an iPhone, they share the same contract. But internally they will have different ways to render in the specific UI.
 
