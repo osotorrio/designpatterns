@@ -12,9 +12,9 @@ Provide an interface for creating families of related or dependent objects witho
 
 -   There are 3 main actors, **client**, **factories** and **products**
 -   **Products** are objects which we would like to use from the client code. These products come in sets or families. A family of products are in some way conceptually related.
--   The **client** code is an object which uses a family of products to do some buiness logic. We would not like to change the client code if new families of products are added in the future.
--   In general, the only responsability of the **abstract factory** is to define a contract. This contract is used by the client code to obtain the family of products needed to deal with its business operations.
--   Each **Concrete factory** knows exactly which set of products will make a family. The concrete factory has the responsability to create that family of products.
+-   The **client** code is an object which uses a family of products to do some business logic. We don't not like to modify the client code if a new family of products is added in the future.
+-   In general, the only responsibility of the **abstract factory** is to define a contract. This contract is used by the client code to obtain the family of products needed to deal with its business operations.
+-   Each **Concrete factory** knows exactly which set of products will make a family. The concrete factory has the responsibility to create that family of products.
 
 ### Theory explained
 
@@ -32,11 +32,11 @@ _Note: Your client code should not know how to create objects, it should know ho
 
 ### When to use this pattern?
 
-Use Abstract Factory when your code needs to work with serveral families of related objects.
+Use Abstract Factory when your code needs to work with several families of related objects.
 
 Use Abstract Factory to add more families of related objects without modifying your code.
 
-Use Abstract Factory to be able to decide in runtime which familly of related objects will be use.
+Use Abstract Factory to be able to decide in runtime which family of related objects will be use.
 
 ### Application requirements
 
@@ -46,10 +46,12 @@ Use Abstract Factory to be able to decide in runtime which familly of related ob
 
 -   You have to write code to manage the onboarding process of a new employee in the company.
 
--   When there is a new employee 3 processes have to be started.
+-   When a new employee is hired, 3 processes have to be started in each office.
 
     1. HR department will kickoff the onboarding process.
     2. Purchasing department will buy desk equipment for the new employee.
     3. Security department has to request credential access to the building for the new employee.
 
 -   Each office manages internally each of these processes in different ways.
+
+-   [The application input parameters are](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/AbstractFactory/Client/Application.cs): country code, type of account, customer name and initial amount.

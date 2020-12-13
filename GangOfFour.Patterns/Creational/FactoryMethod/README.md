@@ -25,7 +25,7 @@ Define an interface for creating an object, but let subclasses decide which clas
 
 You have an object, called base creator, which needs to create another object, called product, to do some operations with it. There could be several different products, but all of them implement the same contract.
 
-This is important, in the Factory Method pattern, all products implement the same interface. Opposite to this is the Abstract Factory pattern, where there are group of family producs with different interfaces.
+This is important, in the Factory Method pattern, all products implement the same interface. Opposite to this is the Abstract Factory pattern, where there are group of family products with different interfaces.
 
 The problem here is that the product, which ultimately would be used by the base creator, is going to be decided in run-time. For instance, depending on some user's input or some configuration value.
 
@@ -42,12 +42,13 @@ _Note: Your client code should not know how to create objects, it should know ho
 ### Application requirements
 
 -   You are working in an application for a bank which has branches in Spain and France at the moment.
--   The bank offers only two type of accounts, business and stardard
--   [The application input parameters are](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Client/Application.cs): country code, type of account, customer name and initial amount.
+-   The bank offers only two type of accounts, business and standard
 -   When a new account is opened [the application must](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Creators/DefaultBranch.cs):
 
-1. Open the account with the customer name.
-2. Credit the account so that the balance is not zero.
+    1. Open the account with the customer name.
+    2. Credit the account so that the balance is not zero.
 
 -   By legislation, [accounts opened in France must run a security credit check](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Creators/FrenchBranch.cs) on the customer before to open the account.
 -   [Accounts opened in Spain don't need to run a credit check](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Creators/SpanishBranch.cs).
+
+-   [The application input parameters are](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/FactoryMethod/Client/Application.cs): country code, type of account, customer name and initial amount.
