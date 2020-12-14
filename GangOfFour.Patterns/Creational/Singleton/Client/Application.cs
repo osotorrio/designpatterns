@@ -7,21 +7,28 @@ namespace GangOfFour.Patterns.Creational.Singleton.Client
 {
     public class Application
     {
+        private const string _expectedToken = "aHR0cHM6Ly9hcGkvYWNjZXNzL3Rva2Vuc29tZUBlbWFpbC5jb21zb21lcGFzc3dvcmQ=";
+
+        /// <summary>
+        /// XUnit runs always this test first.
+        /// </summary>
         [Fact]
-        public void ExampleSingletonPattern()
+        public void ExampleSingletonPatternOne()
         {
-            var fakeHttpClient = new FakeHttpClient();
+            AccessTokenSingleton.RegisterHttpClient(new FakeHttpClient());
+            var singleton = AccessTokenSingleton.GetInstanceThreadSafe("some@email.com", "somepassword");
+            singleton.Token.ShouldBe(_expectedToken);
+        }
 
-            var singletonA = AccessTokenSingleton.GetInstanceNonThreadSafe();
-            singletonA.HttpClient = fakeHttpClient;
-            singletonA.Login("some@email.com", "somepassword");
-
-            var singletonB = AccessTokenSingleton.GetInstanceNonThreadSafe();
-            singletonB.HttpClient = fakeHttpClient;
-            singletonB.Login("some@email.com", "somepassword");
-
-            singletonA.ShouldBeSameAs(singletonB);
-            singletonA.Token.ShouldBeSameAs(singletonB.Token);
+        /// <summary>
+        /// XUnit runs always this test second.
+        /// </summary>
+        [Fact]
+        public void ExampleSingletonPatternTwo()
+        {
+            AccessTokenSingleton.RegisterHttpClient(new FakeHttpClient());
+            var singleton = AccessTokenSingleton.GetInstanceThreadSafe("another@email.com", "anotherpassword");
+            singleton.Token.ShouldBe(_expectedToken);
         }
     }
 }

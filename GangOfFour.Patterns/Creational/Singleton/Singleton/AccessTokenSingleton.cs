@@ -7,37 +7,37 @@ namespace GangOfFour.Patterns.Creational.Singleton.Singleton
     {
         private static AccessTokenSingleton _instance;
 
+        private static IHttpClient _client;
+
         private static readonly object _lock = new object();
 
-        private AccessTokenSingleton() { }
-
-        public IHttpClient HttpClient { get; set; }
+        private AccessTokenSingleton(string email, string password)
+        {
+            Token = _client.Post(new Uri("https://api/access/token"), new
+            {
+                email,
+                password
+            });
+        }
 
         public string Token { get; private set; }
 
-        public void Login(string userEmail, string userPassword)
+        public static void RegisterHttpClient(IHttpClient client)
         {
-            if (string.IsNullOrEmpty(Token))
-            {
-                Token = HttpClient.GetAsString(new Uri("https://api/access/token"), new
-                {
-                    email = userEmail,
-                    password = userPassword
-                });
-            }
+            _client = client;
         }
 
-        public static AccessTokenSingleton GetInstanceNonThreadSafe()
+        public static AccessTokenSingleton GetInstanceNonThreadSafe(string email, string password)
         {
             if (_instance == null)
             {
-                _instance = new AccessTokenSingleton();
+                _instance = new AccessTokenSingleton(email, password);
             }
 
             return _instance;
         }
 
-        public static AccessTokenSingleton GetInstanceThreadSafe()
+        public static AccessTokenSingleton GetInstanceThreadSafe(string email, string password)
         {
             if (_instance == null)
             {
@@ -45,7 +45,7 @@ namespace GangOfFour.Patterns.Creational.Singleton.Singleton
                 {
                     if (_instance == null)
                     {
-                        _instance = new AccessTokenSingleton();
+                        _instance = new AccessTokenSingleton(email, password);
                     }
                 }
             }
