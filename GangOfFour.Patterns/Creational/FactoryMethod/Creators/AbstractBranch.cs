@@ -3,6 +3,9 @@ using GangOfFour.Patterns.Creational.FactoryMethod.Stuff;
 
 namespace GangOfFour.Patterns.Creational.FactoryMethod.Creators
 {
+    /// <summary>
+    /// Abstract Creator
+    /// </summary>
     public abstract class AbstractBranch
     {
         public void OpenBankAccount(AccountTypes type, string holder, decimal amount)

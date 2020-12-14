@@ -2,6 +2,9 @@
 
 namespace GangOfFour.Patterns.Creational.FactoryMethod.Products
 {
+    /// <summary>
+    /// Abstract Product
+    /// </summary>
     public interface IBankAccount
     {
         Guid AccountId { get; }

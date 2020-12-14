@@ -2,6 +2,9 @@
 
 namespace GangOfFour.Patterns.Creational.AbstractFactory.Products
 {
+    /// <summary>
+    /// Concrete Product
+    /// </summary>
     public class SecurityDepartmentLondon : ISecurityDepartment
     {
         public void RequestOfficeSecurityCredentials(string employee, JobTitles jobTitle)

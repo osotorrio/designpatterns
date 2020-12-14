@@ -2,6 +2,9 @@
 
 namespace GangOfFour.Patterns.Creational.AbstractFactory.Products
 {
+    /// <summary>
+    /// Concrete Product
+    /// </summary>
     public class PurchasingDepartmentNewYork : IPurchasingDepartment
     {
         public void RequestDeskSetup(JobTitles jobTitle)
@@ -25,6 +28,6 @@ namespace GangOfFour.Patterns.Creational.AbstractFactory.Products
 
         private static void PurchaseStandardLaptop() { }
 
-        private static void RequestOneMonitor(){ }
+        private static void RequestOneMonitor() { }
     }
 }

@@ -1,4 +1,4 @@
-## Abstract Factory pattern
+## Abstract Factory Pattern
 
 ### Formal definition
 

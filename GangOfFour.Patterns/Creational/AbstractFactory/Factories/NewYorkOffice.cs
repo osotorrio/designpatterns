@@ -2,6 +2,9 @@
 
 namespace GangOfFour.Patterns.Creational.AbstractFactory.Factories
 {
+    /// <summary>
+    /// Concrete Factory
+    /// </summary>
     public class NewYorkOffice : IAbstractOffice
     {
         public IHumanResourcesDepartment CreateHumanResourcesDepartment()

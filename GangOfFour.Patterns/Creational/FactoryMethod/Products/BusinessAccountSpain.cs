@@ -2,6 +2,9 @@
 
 namespace GangOfFour.Patterns.Creational.FactoryMethod.Products
 {
+    /// <summary>
+    /// Concrete Product
+    /// </summary>
     public class BusinessAccountSpain : IBankAccount
     {
         public Guid AccountId => Guid.NewGuid();

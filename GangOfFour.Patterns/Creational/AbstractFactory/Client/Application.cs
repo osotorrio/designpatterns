@@ -5,6 +5,9 @@ using Xunit;
 
 namespace GangOfFour.Patterns.Creational.AbstractFactory.Client
 {
+    /// <summary>
+    /// Application Code
+    /// </summary>
     public class Application
     {
         [Theory]

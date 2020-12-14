@@ -3,6 +3,9 @@ using System;
 
 namespace GangOfFour.Patterns.Creational.FactoryMethod.Products
 {
+    /// <summary>
+    /// Concrete Product
+    /// </summary>
     public class StandardAccountFrance : IBankAccount
     {
         private readonly IRunCreditChecks _creditCheck;

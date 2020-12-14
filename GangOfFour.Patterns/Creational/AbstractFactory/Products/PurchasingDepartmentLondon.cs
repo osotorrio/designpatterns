@@ -2,6 +2,9 @@
 
 namespace GangOfFour.Patterns.Creational.AbstractFactory.Products
 {
+    /// <summary>
+    /// Concrete Product
+    /// </summary>
     public class PurchasingDepartmentLondon : IPurchasingDepartment
     {
         public void RequestDeskSetup(JobTitles jobTitle)

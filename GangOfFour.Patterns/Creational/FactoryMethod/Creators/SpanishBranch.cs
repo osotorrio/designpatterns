@@ -4,6 +4,9 @@ using System;
 
 namespace GangOfFour.Patterns.Creational.FactoryMethod.Creators
 {
+    /// <summary>
+    /// Concrete Creator
+    /// </summary>
     public class SpanishBranch : AbstractBranch
     {
         public override IBankAccount CreateBankAccount(AccountTypes accountType)
