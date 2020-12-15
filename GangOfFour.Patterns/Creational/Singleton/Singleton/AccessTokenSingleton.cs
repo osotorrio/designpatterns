@@ -11,6 +11,8 @@ namespace GangOfFour.Patterns.Creational.Singleton.Singleton
 
         private static readonly object _lock = new object();
 
+        public string Token { get; private set; }
+
         private AccessTokenSingleton(string email, string password)
         {
             Token = _client.Post(new Uri("https://api/access/token"), new
@@ -19,8 +21,6 @@ namespace GangOfFour.Patterns.Creational.Singleton.Singleton
                 password
             });
         }
-
-        public string Token { get; private set; }
 
         public static void RegisterHttpClient(IHttpClient client)
         {

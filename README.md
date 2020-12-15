@@ -2,11 +2,11 @@
 
 ## Creational Patterns
 
--   [Abstract Factory](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/AbstractFactory): Use when your code needs to use a family of related objects and you don't want to change your code when a new familly is added to the system.
+-   [Abstract Factory](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/AbstractFactory): Use when your code needs to use a family of related objects and you don't want to modify your code anytime a new type of family is added to the system.
 -   Builder
--   [Factory Method](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/FactoryMethod): Use to move out of your code the responsibility and the knowledge of how to create objects.
+-   [Factory Method](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/FactoryMethod): Use when your code needs an object and you don't want to modify your code anytime a new type of object is added to the system.
 -   Prototype
--   Singleton ?!
+-   [Singleton](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/Singleton): Use when your code needs an unique single instance of a particular object across your whole system.
 
 ## Structural Patterns
 
@@ -20,7 +20,7 @@
 
 ## Behavioral Patterns
 
--   Chain of Resposability ?!
+-   Chain of Responsibility ?!
 -   Command
 -   Interpreter
 -   [Iterator](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Behavioral/Iterator): Use to have a common interface to access the items of different type of collections.

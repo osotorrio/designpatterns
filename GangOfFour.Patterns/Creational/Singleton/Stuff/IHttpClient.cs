@@ -12,7 +12,7 @@ namespace GangOfFour.Patterns.Creational.Singleton.Stuff
     {
         public string Post(Uri url, dynamic body)
         {
-            return Convert.ToBase64String(Encoding.UTF8.GetBytes($"{url}{body.email}{body.password}"));
+            return Convert.ToBase64String(Encoding.UTF8.GetBytes($"{url.AbsoluteUri}{body.email}{body.password}"));
         }
     }
 }
