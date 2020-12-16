@@ -10,7 +10,7 @@ Define an interface for creating an object, but let subclasses decide which clas
 
 ### Diagram explained
 
--   There are 2 main actors, **products** and **creators**
+-   There are 2 main actors, **products** and **creators**.
 -   A **product** is an object we would like to use from a creator, for example, we want to call its methods.
 -   A **creator** is an object which uses the product to do some business logic. In this case, the creator is the client code we would not want to change if new products are needed in the future.
 -   The **base creator** has 2 responsabilities:
@@ -24,17 +24,18 @@ Define an interface for creating an object, but let subclasses decide which clas
 ### Clues to recognize this pattern
 
 1. **You have a high-level object which use another object to execute some business logic with it**. For instance:
-   
-   - A warehouse object use a new product object to update the inventory.
-   - A logistic object use a truck to ship goods to customers.
+
+    - A warehouse object use a new product object to update the inventory.
+    - A logistic object use a truck to ship goods to customers.
 
 2. **There are several different types of objects needed by the hight-level object**. For instance:
-   - For a warehouse we could have books, desks, lamps, etc.
-   - For a logistic object we could have trucks, ships, planes, etc
+
+    - For a warehouse we could have books, desks, lamps, etc.
+    - For a logistic object we could have trucks, ships, planes, etc
 
 3. **All these types of objects have the same contract**. For instance:
-   - Books, desks and lamps must have the same public methods used to update the inventory.
-   - Trucks, ships and planes must have the same public methods to deliver goods.
+    - Books, desks and lamps must have the same public methods used to update the inventory.
+    - Trucks, ships and planes must have the same public methods to deliver goods.
 
 ### When to use this pattern?
 

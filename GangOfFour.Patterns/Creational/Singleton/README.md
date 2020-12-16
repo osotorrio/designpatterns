@@ -2,22 +2,32 @@
 
 ### Formal definition
 
+Ensure a class only has one instance, and provide a global point of access to it.
 
 ### UML diagram
 
+![Source book: Design Patterns, Elements of Reusable Object-Oriented Software](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/Singleton/uml_diagram.png)
 
 ### Diagram explained
 
+-   A singleton class must have a private.
+-   A singleton class must expose a static function to get the singleton instance.
+-   Internally the singleton stores the instance in a private field. This field works like a cache.
+-   The public static function will return the value of the cache or create a new instance, with the private constructor, if the cache is null.
 
 ### Clues to recognize Abstract Factory pattern
 
+1. **You have a shared resource in your system which should be created only once**. For instance a data base connection string object.
+
+2. **You have a collection of global variables across your system**.
 
 ### When to use this pattern?
 
-
-
-_Note: Your client code should not know how to create objects, it should know how to use them._
+Use Singleton anytime you need an object to be loaded in memory only one time across your system.
 
 ### Application requirements
 
-
+-   You are writing some integration tests agains a HTTP API.
+-   The API endpoints have authentication set up.
+-   You must get an authentication token before calling any other API endpoints.
+-   To get the authentication token you must post to an endpoint the email and password.
