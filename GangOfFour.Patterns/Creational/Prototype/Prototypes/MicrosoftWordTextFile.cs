@@ -2,6 +2,9 @@
 
 namespace GangOfFour.Patterns.Creational.Prototype.Prototypes
 {
+    /// <summary>
+    /// Concrete Prototype
+    /// </summary>
     public class MicrosoftWordTextFile : AbstractTextFile
     {
         public TextColors TextColor { get; set; }

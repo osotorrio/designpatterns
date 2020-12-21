@@ -1,15 +1,17 @@
 ﻿namespace GangOfFour.Patterns.Creational.Prototype.Prototypes
 {
+    /// <summary>
+    /// Abstract Prototype
+    /// </summary>
     public abstract class AbstractTextFile
     {
+        public string FileName { get; set; }
 
-        public string FileName { get; }
+        public string FileExtension { get; set; }
 
-        public string FileExtension { get; }
+        public string FolderPath { get; set; }
 
-        public string FolderPath { get; }
-
-        public string Content { get; }
+        public string Content { get; set; }
 
         public AbstractTextFile(string name, string extension, string location, string content)
         {
