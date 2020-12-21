@@ -6,6 +6,8 @@ namespace GangOfFour.Patterns.Creational.Prototype.Client
 {
     public class Folder
     {
+        private Stack<string> FolderNames;
+
         public string Name { get; set; }
 
         public List<AbstractTextFile> Files { get; set; }
@@ -29,26 +31,30 @@ namespace GangOfFour.Patterns.Creational.Prototype.Client
             {
                 FolderNames = new Stack<string>();
                 FolderNames.Push(Name);
-
-                var parent = ParentFolder;
-                while (parent != null)
-                {
-                    FolderNames.Push(parent.Name);
-                    parent = parent.ParentFolder;
-                }
-
+                LoopFolderParentRecursively();
                 var path = new StringBuilder();
-
-                while (FolderNames.Count > 0)
-                {
-                    path.Append(FolderNames.Pop());
-                    path.Append("\\");
-                }
-
+                PopFolderNamesRecursively(path);
                 return path.ToString();
             }
         }
 
-        private Stack<string> FolderNames;
+        private void LoopFolderParentRecursively()
+        {
+            var parent = ParentFolder;
+            while (parent != null)
+            {
+                FolderNames.Push(parent.Name);
+                parent = parent.ParentFolder;
+            }
+        }
+
+        private void PopFolderNamesRecursively(StringBuilder path)
+        {
+            while (FolderNames.Count > 0)
+            {
+                path.Append(FolderNames.Pop());
+                path.Append("\\");
+            }
+        }
     }
 }
