@@ -31,14 +31,14 @@ namespace GangOfFour.Patterns.Creational.Prototype.Client
             {
                 FolderNames = new Stack<string>();
                 FolderNames.Push(Name);
-                LoopFolderParentRecursively();
+                LoopParentFoldersRecursively();
                 var path = new StringBuilder();
                 PopFolderNamesRecursively(path);
                 return path.ToString();
             }
         }
 
-        private void LoopFolderParentRecursively()
+        private void LoopParentFoldersRecursively()
         {
             var parent = ParentFolder;
             while (parent != null)
