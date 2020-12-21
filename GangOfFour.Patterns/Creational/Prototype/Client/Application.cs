@@ -1,4 +1,6 @@
-﻿using GangOfFour.Patterns.Creational.Prototype.Stuff;
+﻿using GangOfFour.Patterns.Creational.Prototype.Prototypes;
+using GangOfFour.Patterns.Creational.Prototype.Stuff;
+using Shouldly;
 using Xunit;
 
 namespace GangOfFour.Patterns.Creational.Prototype.Client
@@ -8,13 +10,33 @@ namespace GangOfFour.Patterns.Creational.Prototype.Client
         [Fact]
         public void ExamplePrototypePattern()
         {
-            var root = new Folder("C:");
-            var chess = new Folder("Chess")
+            // Create folder structure
+            var root = new Folder("C:", null);
+            var chessFolder = new Folder("Chess", root);
+            var backupFolder = new Folder("Backup", root);
+
+            root.Folders.Add(chessFolder);
+            root.Folders.Add(backupFolder);
+
+            // Create files
+            var kasparov = new MicrosoftWordTextFile("Garry Kasparov", ".docx", chessFolder.Path, "Kasparov is the best attacker player", TextColors.Blue);
+            var karpov = new NotepadPlusTextFile("Anatoly Karpov", ".txt", chessFolder.Path, "Karpov is the best positional player");
+
+            // Add files to folders
+            chessFolder.Files.Add(kasparov);
+            chessFolder.Files.Add(karpov);
+
+            // Copy files from chess folder to backup folder
+            foreach (var file in chessFolder.Files)
             {
-                Parent = root
-            };
-            root.Childs.Add(chess);
-            var path = chess.Path;
+                var copy = file.Clone();
+                copy.FolderPath = backupFolder.Path;
+                backupFolder.Files.Add(copy);
+            }
+
+            // Assert
+            chessFolder.Files.ForEach(file => file.FolderPath.ShouldBe("C:\\Chess\\"));
+            backupFolder.Files.ForEach(file => file.FolderPath.ShouldBe("C:\\Backup\\"));
         }
     }
 }
