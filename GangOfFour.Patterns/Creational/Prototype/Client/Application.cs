@@ -22,17 +22,12 @@ namespace GangOfFour.Patterns.Creational.Prototype.Client
             var kasparov = new MicrosoftWordTextFile("Garry Kasparov", ".docx", chessFolder.Path, "Kasparov is the best attacker player", TextColors.Blue);
             var karpov = new NotepadPlusTextFile("Anatoly Karpov", ".txt", chessFolder.Path, "Karpov is the best positional player");
 
-            // Add files to folders
+            // Add files to chess folder
             chessFolder.Files.Add(kasparov);
             chessFolder.Files.Add(karpov);
 
             // Copy files from chess folder to backup folder
-            foreach (var file in chessFolder.Files)
-            {
-                var copy = file.Clone();
-                copy.FolderPath = backupFolder.Path;
-                backupFolder.Files.Add(copy);
-            }
+            chessFolder.CopyTo(backupFolder);
 
             // Assert
             chessFolder.Files.ForEach(file => file.FolderPath.ShouldBe("C:\\Chess\\"));

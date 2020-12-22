@@ -4,55 +4,60 @@ using System.Text;
 
 namespace GangOfFour.Patterns.Creational.Prototype.Client
 {
-    public class Folder
+    public class Folder : IFolder
     {
-        private Stack<string> FolderNames;
-
         public string Name { get; set; }
-
-        public List<AbstractTextFile> Files { get; set; }
 
         public Folder ParentFolder { get; set; }
 
-        public List<Folder> Folders { get; set; }
+        public List<Folder> Folders { get; set; } = new List<Folder>();
 
+        public List<AbstractTextFile> Files { get; set; } = new List<AbstractTextFile>();
 
         public Folder(string name, Folder parent)
         {
             Name = name;
             ParentFolder = parent;
-            Files = new List<AbstractTextFile>();
-            Folders = new List<Folder>();
         }
 
         public string Path
         {
             get
             {
-                FolderNames = new Stack<string>();
-                FolderNames.Push(Name);
-                LoopParentFoldersRecursively();
+                var folderNames = new Stack<string>();
+                folderNames.Push(Name);
+                LoopParentFoldersRecursively(folderNames);
                 var path = new StringBuilder();
-                PopFolderNamesRecursively(path);
+                PopFolderNamesRecursively(path, folderNames);
                 return path.ToString();
             }
         }
 
-        private void LoopParentFoldersRecursively()
+        public void CopyTo(Folder target)
+        {
+            Files.ForEach(file =>
+            {
+                var copy = file.Clone();
+                copy.FolderPath = target.Path;
+                target.Files.Add(copy);
+            });
+        }
+
+        private void LoopParentFoldersRecursively(Stack<string> folderNames)
         {
             var parent = ParentFolder;
             while (parent != null)
             {
-                FolderNames.Push(parent.Name);
+                folderNames.Push(parent.Name);
                 parent = parent.ParentFolder;
             }
         }
 
-        private void PopFolderNamesRecursively(StringBuilder path)
+        private void PopFolderNamesRecursively(StringBuilder path, Stack<string> folderNames)
         {
-            while (FolderNames.Count > 0)
+            while (folderNames.Count > 0)
             {
-                path.Append(FolderNames.Pop());
+                path.Append(folderNames.Pop());
                 path.Append("\\");
             }
         }
