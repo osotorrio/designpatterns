@@ -15,6 +15,6 @@ namespace GangOfFour.Patterns.Creational.Prototype.Client
 
         string Path { get; }
 
-        void CopyTo(Folder target);
+        void CopyTo(IFolder target);
     }
 }

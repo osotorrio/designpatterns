@@ -33,7 +33,7 @@ namespace GangOfFour.Patterns.Creational.Prototype.Client
             }
         }
 
-        public void CopyTo(Folder target)
+        public void CopyTo(IFolder target)
         {
             Files.ForEach(file =>
             {
