@@ -4,6 +4,9 @@ using System.Text;
 
 namespace GangOfFour.Patterns.Creational.Prototype.Client
 {
+    /// <summary>
+    /// Client Code
+    /// </summary>
     public class Folder : IFolder
     {
         public string Name { get; set; }
