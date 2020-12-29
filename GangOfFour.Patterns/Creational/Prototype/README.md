@@ -17,9 +17,21 @@ Specify the kinds of objects to create using a prototypical instance, and create
 
 ### Clues to recognize Abstract Factory pattern
 
-1. **You have an object which complex initialization requirements** which you need to instance in several parts of your system. For instance:
-   - An class with 
+1. **You need to have several copies** of almost the same object in memory.
+
+2. **You have an object with many properties** which you need to instance several times.
 
 ### When to use this pattern?
 
+Use Prototype Pattern when you have objects with complex initialization requirements. Cloning the object and updating just the properties you need.
+
+Use Prototype Pattern when you have a complex object with several configurations, all of them slightly different.
+
+Use Prototype Pattern when you need to load in memory several independent instances of the same object.
+
 ### Application requirements
+
+-   You are writing a file managment system which it is composed of folders and files.
+-   Folders can contain several files and other nested folders as well.
+-   You are asked to write a function that will copy all files from one folder to another.
+-   After the files are copied, the new files will have a different path value than the original files.
