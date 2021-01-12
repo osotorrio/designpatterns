@@ -38,9 +38,9 @@ Define an interface for creating an object, but let subclasses decide which clas
 
 ### When to use this pattern?
 
-Use Factory Method to separate product construction code from the code that actually uses the product.
+- Use Factory Method to separate product construction code from the code that actually uses the product.
 
-Use Factory Method to extend the use of new products without modifying the core code of the base creator. Simply add a new subclass creator which will create the new products.
+- Use Factory Method to extend the use of new products without modifying the core code of the base creator. Simply add a new subclass creator which will create the new products.
 
 _Note: Your client code should not know how to create objects, it should know how to use them._
 
