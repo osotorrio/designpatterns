@@ -18,15 +18,7 @@ Specify the kinds of objects to create using a prototypical instance, and create
 
 - **You need to have several copies** of the same object in memory.
 
-- **You have an object with many properties** which you need to instance several times.
-
-### When to use this pattern?
-
-- Use Prototype Pattern when you have objects with complex initialization requirements. Cloning the object and updating just the properties you need.
-
-- Use Prototype Pattern when you have a complex object with several configurations, all of them slightly different.
-
-- Use Prototype Pattern when you need to load in memory several independent instances of the same object.
+- **You have an object with many properties** which you need to instance several times throughout your application code.
 
 ### Application requirements
 
