@@ -5,15 +5,17 @@
 - [Abstract Factory](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/AbstractFactory). Use when your code needs to work with several families of related objects. Use to add more families of related objects without modifying your code. Use to be able to decide in runtime which family of related objects will be used
 
 - Builder
-- [Factory Method](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/FactoryMethod): Use when your code needs an object and you don't want to modify your code anytime a new type of object is added to the system.
-- [Prototype](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/Prototype): Use when your code needs a copy of an object and you don't want your code to depend on the concrete classes of the object to be copied.
-- [Singleton](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/Singleton): Use when your code needs an unique single instance of a particular object across your whole system.
+- [Factory Method](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/FactoryMethod). Use to separate objects construction code from the code that actually uses the objects. Use to support the addition of new objects without modifying the client code.
+
+
+- [Prototype](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/Prototype). Use when your code needs a copy of an object and you don't want your code to depend on the concrete classes of the object to be copied.
+- [Singleton](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/Singleton). Use when your code needs an unique single instance of a particular object across your whole system.
 
 ## Structural Patterns
 
 - Adapter
 - Bridge
-- [Composite](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Structural/Composite): Use in a hierarchical structure of objects to treat the same way individual nodes and whole branches of nodes in the tree.
+- [Composite](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Structural/Composite). Use in a hierarchical structure of objects to treat the same way individual nodes and whole branches of nodes in the tree.
 - Decorator ?!
 - Facade
 - Flyweight
@@ -24,10 +26,10 @@
 - Chain of Responsibility ?!
 - Command
 - Interpreter
-- [Iterator](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Behavioral/Iterator): Use to have a common interface to access the items of different type of collections.
+- [Iterator](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Behavioral/Iterator). Use to have a common interface to access the items of different type of collections.
 - Mediator ?!
 - Memento
-- [Observer](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Behavioral/Observer): Use to notify a collection of objects that the internal state of another object has changed
+- [Observer](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Behavioral/Observer). Use to notify a collection of objects that the internal state of another object has changed
 - State
 - Strategy
 - Template Method

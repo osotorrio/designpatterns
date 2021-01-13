@@ -36,14 +36,6 @@ Define an interface for creating an object, but let subclasses decide which clas
   - Books, desks and lamps must have the same public methods used to update the inventory.
   - Trucks, ships and planes must have the same public methods to deliver goods.
 
-### When to use this pattern?
-
-- Use Factory Method to separate product construction code from the code that actually uses the product.
-
-- Use Factory Method to extend the use of new products without modifying the core code of the base creator. Simply add a new subclass creator which will create the new products.
-
-_Note: Your client code should not know how to create objects, it should know how to use them._
-
 ### Application requirements
 
 - You are working in an application for a bank which has branches in Spain and France at the moment.
