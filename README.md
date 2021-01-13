@@ -8,9 +8,10 @@
   - Use to be able to decide in runtime which family of related objects will be used.
 
 - Builder
+
 - [Factory Method](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/FactoryMethod)
   - Use to separate objects construction code from the code that actually uses the objects.
-  - Use to support the addition of new objects without modifying the client code.
+  - Use to support the addition of new objects to the system without modifying the client code.
 
 - [Prototype](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/Prototype)
   - Use when your code needs a copy of an object and you don't want to depend on the concrete classes of the object to be copied.
@@ -18,7 +19,9 @@
   - Use Prototype Pattern when you have a complex object with several configurations, all of them slightly different.
   - Use Prototype Pattern when you need to load in memory several independent instances of the same object.
 
-- [Singleton](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/Singleton). Use when your code needs an unique single instance of a particular object across your whole system.
+- [Singleton](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/Singleton)
+  - Use when your code needs an unique single instance of a particular object across your whole system.
+  - Use when you need stricter control over global variables.
 
 ## Structural Patterns
 

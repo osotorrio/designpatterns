@@ -21,10 +21,6 @@ Ensure a class only has one instance, and provide a global point of access to it
 
 - **You have a collection of global variables across your system**.
 
-### When to use this pattern?
-
-Use Singleton when you need an object to be loaded in memory only one time across your system. This could be also needed working under a multithreaded application.
-
 ### Application requirements
 
 - You are writing some integration tests against a HTTP API.
