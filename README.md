@@ -2,11 +2,15 @@
 
 ## Creational Patterns
 
-- [Abstract Factory](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/AbstractFactory). Use when your code needs to work with several families of related objects. Use to add more families of related objects without modifying your code. Use to be able to decide in runtime which family of related objects will be used
+- [Abstract Factory](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/AbstractFactory)
+  - Use when your code needs to work with several families of related objects. 
+  - Use to add more families of related objects without modifying your code. 
+  - Use to be able to decide in runtime which family of related objects will be used.
 
 - Builder
-- [Factory Method](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/FactoryMethod). Use to separate objects construction code from the code that actually uses the objects. Use to support the addition of new objects without modifying the client code.
-
+- [Factory Method](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/FactoryMethod)
+  - Use to separate objects construction code from the code that actually uses the objects. 
+  - Use to support the addition of new objects without modifying the client code.
 
 - [Prototype](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/Prototype). Use when your code needs a copy of an object and you don't want your code to depend on the concrete classes of the object to be copied.
 - [Singleton](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/Singleton). Use when your code needs an unique single instance of a particular object across your whole system.
