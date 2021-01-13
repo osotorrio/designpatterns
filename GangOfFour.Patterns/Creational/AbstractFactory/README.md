@@ -26,17 +26,7 @@ Provide an interface for creating families of related or dependent objects witho
   - A button in an Android application will have the same contract than a button in a iPhone application. Internally they render in different ways.
   - A door in a mansion have the same contract than a door in an apartment. Internally they could open in different ways.
 
-- **There are more than one type of family of objects, also called variants or themes**. Or at least, there is the possibility of including more families with time.
-
-### When to use this pattern?
-
-- Use Abstract Factory when your code needs to work with several families of related objects.
-
-- Use Abstract Factory to add more families of related objects without modifying your code.
-
-- Use Abstract Factory to be able to decide in runtime which family of related objects will be used.
-
-_Note: Your client code should not know how to create objects, it should know how to use them._
+- **There are more than one type of family of objects, also called variants or themes**. Or at least, there is the possibility of including more families in the feature.
 
 ### Application requirements
 
