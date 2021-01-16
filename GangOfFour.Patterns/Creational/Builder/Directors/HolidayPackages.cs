@@ -4,6 +4,9 @@ using System;
 
 namespace GangOfFour.Patterns.Creational.Builder.Directors
 {
+    /// <summary>
+    /// Director
+    /// </summary>
     public class HolidayPackages
     {
         public void BuildStandardHolidayPackage(IHolidayBuilder scheduleBuilder)

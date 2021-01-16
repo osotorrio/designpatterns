@@ -3,6 +3,9 @@ using GangOfFour.Patterns.Creational.Builder.Stuff;
 
 namespace GangOfFour.Patterns.Creational.Builder.Builders
 {
+    /// <summary>
+    /// Builder
+    /// </summary>
     public class ScheduleBuilder : IHolidayBuilder
     {
         private FlighInfo _flight;

@@ -3,6 +3,9 @@ using System.Text;
 
 namespace GangOfFour.Patterns.Creational.Builder.Products
 {
+    /// <summary>
+    /// Product
+    /// </summary>
     public class ScheduleSummary
     {
         public ScheduleSummary(FlighInfo flight, HotelReservation hotel, ThemeParkTicket park, RestaurantReservation restaurant, ClubReservation club)

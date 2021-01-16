@@ -2,6 +2,9 @@
 
 namespace GangOfFour.Patterns.Creational.Builder.Products
 {
+    /// <summary>
+    /// Product
+    /// </summary>
     public class PriceSummary
     {
         public PriceSummary(FlighInfo flight, HotelReservation hotel, ThemeParkTicket park, RestaurantReservation restaurant, ClubReservation club)

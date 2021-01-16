@@ -1,7 +1,10 @@
-using GangOfFour.Patterns.Creational.Builder.Stuff;
+﻿using GangOfFour.Patterns.Creational.Builder.Stuff;
 
 namespace GangOfFour.Patterns.Creational.Builder.Builders
 {
+    /// <summary>
+    /// Builder
+    /// </summary>
     public interface IHolidayBuilder
     {
         public void AddFlights(FlighInfo flightInfo);
