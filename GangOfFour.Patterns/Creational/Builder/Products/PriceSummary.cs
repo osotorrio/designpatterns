@@ -1,14 +1,13 @@
-using GangOfFour.Patterns.Creational.Builder.Stuff;
+﻿using GangOfFour.Patterns.Creational.Builder.Stuff;
 
 namespace GangOfFour.Patterns.Creational.Builder.Products
 {
     public class PriceSummary
     {
-        public PriceSummary(FlighInfo flight, HotelReservation hotel, TouristBusTicket bus, ThemeParkTicket park, RestaurantReservation restaurant, ClubReservation club)
+        public PriceSummary(FlighInfo flight, HotelReservation hotel, ThemeParkTicket park, RestaurantReservation restaurant, ClubReservation club)
         {
             Flight = flight;
             Hotel = hotel;
-            Bus = bus;
             Park = park;
             Restaurant = restaurant;
             Club = club;
@@ -18,8 +17,6 @@ namespace GangOfFour.Patterns.Creational.Builder.Products
 
         public HotelReservation Hotel { get; }
 
-        public TouristBusTicket Bus { get; }
-
         public ThemeParkTicket Park { get; }
 
         public RestaurantReservation Restaurant { get; }
@@ -28,17 +25,24 @@ namespace GangOfFour.Patterns.Creational.Builder.Products
 
         public decimal CalculateTotalPrice()
         {
-            return (Flight.Price * Flight.People)
-                    +
-                    (Hotel.Price * (Hotel.Checkout - Hotel.Checkin).Days)
-                    +
-                    (Bus.Price * Bus.People)
-                    +
-                    (Park.Price * Park.People)
-                    +
-                    (Restaurant.Price * Restaurant.People)
-                    +
-                    (Club.Price);
+            decimal total = 0;
+
+            if (Flight != null)
+                total += Flight.Price * Flight.People;
+
+            if (Hotel != null)
+                total += Hotel.Price * (Hotel.Checkout - Hotel.Checkin).Days;
+
+            if (Park != null)
+                total += Park.Price * Park.People;
+
+            if (Restaurant != null)
+                total += Restaurant.Price * Restaurant.People;
+
+            if (Club != null)
+                total += Club.Price;
+
+            return total;
         }
     }
 }

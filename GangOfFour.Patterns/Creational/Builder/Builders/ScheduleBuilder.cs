@@ -1,5 +1,4 @@
-using System;
-using GangOfFour.Patterns.Creational.Builder.Products;
+﻿using GangOfFour.Patterns.Creational.Builder.Products;
 using GangOfFour.Patterns.Creational.Builder.Stuff;
 
 namespace GangOfFour.Patterns.Creational.Builder.Builders
@@ -15,8 +14,6 @@ namespace GangOfFour.Patterns.Creational.Builder.Builders
         private ClubReservation _club;
 
         private ThemeParkTicket _park;
-
-        private TouristBusTicket _bus;
 
         public void AddFlights(FlighInfo flightInfo)
         {
@@ -43,22 +40,9 @@ namespace GangOfFour.Patterns.Creational.Builder.Builders
             _park = themeParkTicket;
         }
 
-        public void AddTouristBus(TouristBusTicket bustTicket)
-        {
-            _bus = bustTicket;
-        }
-
         public ScheduleSummary Build()
         {
-            return new ScheduleSummary(
-                _flight.Outbound,
-                _flight.Inbound,
-                _hotel.Checkin,
-                _hotel.Checkout,
-                _bus.Date,
-                _park.Date,
-                _restaurant.Date,
-                _club.Date);
+            return new ScheduleSummary(_flight, _hotel, _park, _restaurant, _club);
         }
     }
 }

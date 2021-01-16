@@ -4,8 +4,8 @@ namespace GangOfFour.Patterns.Creational.Builder.Stuff
 {
     public class HotelReservation
     {
-        public DateTime Checkin { get; internal set; }
-        public DateTime Checkout { get; internal set; }
-        public int Price { get; internal set; }
+        public DateTime Checkin { get; set; }
+        public DateTime Checkout { get; set; }
+        public decimal Price { get; set; }
     }
 }

@@ -4,9 +4,9 @@ namespace GangOfFour.Patterns.Creational.Builder.Stuff
 {
     public class FlighInfo
     {
-        public DateTime Outbound { get; internal set; }
-        public DateTime Inbound { get; internal set; }
-        public int People { get; internal set; }
-        public int Price { get; internal set; }
+        public DateTime Outbound { get; set; }
+        public DateTime Inbound { get; set; }
+        public int People { get; set; }
+        public decimal Price { get; set; }
     }
 }
