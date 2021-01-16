@@ -7,6 +7,8 @@ namespace GangOfFour.Patterns.Creational.Builder.Builders
     /// </summary>
     public interface IHolidayBuilder
     {
+        public void Reset();
+
         public void AddFlights(FlighInfo flightInfo);
 
         public void AddHotel(HotelReservation hotelReservation);

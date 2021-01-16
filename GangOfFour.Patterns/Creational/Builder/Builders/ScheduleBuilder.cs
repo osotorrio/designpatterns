@@ -18,6 +18,15 @@ namespace GangOfFour.Patterns.Creational.Builder.Builders
 
         private ThemeParkTicket _park;
 
+        public void Reset()
+        {
+            _flight = null;
+            _hotel = null;
+            _restaurant = null;
+            _club = null;
+            _park = null;
+        }
+
         public void AddFlights(FlighInfo flightInfo)
         {
             _flight = flightInfo;
