@@ -2,7 +2,7 @@ using System;
 
 namespace GangOfFour.Patterns.Creational.Builder.Stuff
 {
-    public class ThemeParkTicket
+    public class ThemeParkReservation
     {
         public DateTime Date { get; set; }
         public decimal Price { get; set; }

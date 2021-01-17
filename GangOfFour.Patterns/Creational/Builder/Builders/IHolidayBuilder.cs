@@ -9,11 +9,11 @@ namespace GangOfFour.Patterns.Creational.Builder.Builders
     {
         public void Reset();
 
-        public void AddFlights(FlighInfo flightInfo);
+        public void AddFlights(FlightReservation flightInfo);
 
         public void AddHotel(HotelReservation hotelReservation);
 
-        public void AddThemePark(ThemeParkTicket ThemeParkTicket);
+        public void AddThemePark(ThemeParkReservation ThemeParkTicket);
 
         public void AddLuxuryDinner(RestaurantReservation restaurantReservation);
 

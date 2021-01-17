@@ -6,9 +6,9 @@ namespace GangOfFour.Patterns.Creational.Builder.Builders
     /// <summary>
     /// Builder
     /// </summary>
-    public class ScheduleBuilder : IHolidayBuilder
+    public class ScheduleSummaryBuilder : IHolidayBuilder
     {
-        private FlighInfo _flight;
+        private FlightReservation _flight;
 
         private HotelReservation _hotel;
 
@@ -16,7 +16,7 @@ namespace GangOfFour.Patterns.Creational.Builder.Builders
 
         private ClubReservation _club;
 
-        private ThemeParkTicket _park;
+        private ThemeParkReservation _park;
 
         public void Reset()
         {
@@ -27,7 +27,7 @@ namespace GangOfFour.Patterns.Creational.Builder.Builders
             _park = null;
         }
 
-        public void AddFlights(FlighInfo flightInfo)
+        public void AddFlights(FlightReservation flightInfo)
         {
             _flight = flightInfo;
         }
@@ -47,7 +47,7 @@ namespace GangOfFour.Patterns.Creational.Builder.Builders
             _club = clubReservation;
         }
 
-        public void AddThemePark(ThemeParkTicket themeParkTicket)
+        public void AddThemePark(ThemeParkReservation themeParkTicket)
         {
             _park = themeParkTicket;
         }

@@ -18,7 +18,6 @@
 	<ItemGroup>
 		<Folder Include="Behavioral\Iterator\img\" />
 		<Folder Include="Behavioral\Strategy\" />
-		<Folder Include="Creational\Builder\" />
 		<Folder Include="Structural\Adapter\" />
 		<Folder Include="Structural\Bridge\" />
 		<Folder Include="Structural\Composite\img\" />
