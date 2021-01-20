@@ -7,7 +7,7 @@ namespace GangOfFour.Patterns.Creational.Builder.Products
     /// </summary>
     public class PriceSummary
     {
-        public PriceSummary(FlighInfo flight, HotelReservation hotel, ThemeParkTicket park, RestaurantReservation restaurant, ClubReservation club)
+        public PriceSummary(FlightReservation flight, HotelReservation hotel, ThemeParkReservation park, RestaurantReservation restaurant, ClubReservation club)
         {
             Flight = flight;
             Hotel = hotel;
@@ -16,11 +16,11 @@ namespace GangOfFour.Patterns.Creational.Builder.Products
             Club = club;
         }
 
-        public FlighInfo Flight { get; }
+        public FlightReservation Flight { get; }
 
         public HotelReservation Hotel { get; }
 
-        public ThemeParkTicket Park { get; }
+        public ThemeParkReservation Park { get; }
 
         public RestaurantReservation Restaurant { get; }
 

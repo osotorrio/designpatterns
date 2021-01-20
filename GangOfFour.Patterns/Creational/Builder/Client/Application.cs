@@ -17,16 +17,16 @@ namespace GangOfFour.Patterns.Creational.Builder.Client
         public void ExampleBuilderPattern()
         {
             var packages = new HolidayPackages();
-            var scheduleBuilder = new ScheduleBuilder();
-            var priceBuilder = new PriceBuilder();
+            var scheduleBuilder = new ScheduleSummaryBuilder();
+            var priceBuilder = new PriceSummaryBuilder();
 
             packages.ConfigureStandardHolidayPackage(priceBuilder);
             var priceStandardHoliday = priceBuilder.Build();
             priceStandardHoliday.CalculateTotalPrice().ShouldBe(1582.50m);
 
             packages.ConfigureStandardHolidayPackage(scheduleBuilder);
-            var scheduleStarndardHoliday = scheduleBuilder.Build();
-            scheduleStarndardHoliday.PrintoutSchedule().ShouldBe(
+            var scheduleStandardHoliday = scheduleBuilder.Build();
+            scheduleStandardHoliday.PrintoutSchedule().ShouldBe(
                 $"Flying from 30-Dec-21 9:00:00 AM to 06-Jan-22 9:00:00 AM{_nl}Hotel from 30-Dec-21 12:00:00 PM to 06-Jan-22 12:00:00 PM{_nl}Theme park on the date 30-Dec-21 2:00:00 PM{_nl}");
 
             priceBuilder.Reset();

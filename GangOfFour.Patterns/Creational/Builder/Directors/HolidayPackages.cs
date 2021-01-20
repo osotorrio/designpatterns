@@ -13,7 +13,7 @@ namespace GangOfFour.Patterns.Creational.Builder.Directors
         {
             var outboundDate = new DateTime(2021, 12, 30, 9, 00, 00);
 
-            builder.AddFlights(new FlighInfo
+            builder.AddFlights(new FlightReservation
             {
                 Outbound = outboundDate,
                 Inbound = outboundDate.AddDays(7),
@@ -28,7 +28,7 @@ namespace GangOfFour.Patterns.Creational.Builder.Directors
                 Price = 184.50m
             });
             
-            builder.AddThemePark(new ThemeParkTicket
+            builder.AddThemePark(new ThemeParkReservation
             {
                 Date = outboundDate.AddHours(5),
                 Price = 50.00m,
@@ -40,7 +40,7 @@ namespace GangOfFour.Patterns.Creational.Builder.Directors
         {
             var outboundDate = new DateTime(2021, 12, 30, 9, 00, 00);
 
-            builder.AddFlights(new FlighInfo
+            builder.AddFlights(new FlightReservation
             {
                 Outbound = outboundDate,
                 Inbound = outboundDate.AddDays(7),
