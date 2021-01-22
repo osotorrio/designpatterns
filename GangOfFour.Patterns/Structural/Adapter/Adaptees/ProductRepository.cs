@@ -12,14 +12,22 @@ namespace GangOfFour.Patterns.Structural.Adapter.Adaptees
         {
             if (Guid.TryParse(idOrReference, out var id))
             {
-                // Get the product by id
+                return GetProductById(id);
             }
             else
             {
-                // Get the product by reference
+                return GetProductByReference(idOrReference);
             }
+        }
 
-            return new Product();
+        private static Product GetProductById(Guid id)
+        {
+            return new Product() { Id = id };
+        }
+
+        private static Product GetProductByReference(string reference)
+        {
+            return new Product() { Reference = reference };
         }
     }
 }
