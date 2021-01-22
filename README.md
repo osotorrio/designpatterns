@@ -3,20 +3,24 @@
 ## Creational Patterns
 
 -   [Abstract Factory](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/AbstractFactory)
+
     -   Use when your code needs to work with several families of related objects.
     -   Use to add more families of related objects without modifying your code.
     -   Use to be able to decide in runtime which family of related objects will be used.
 
 -   [Builder](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/Builder)
-    - Use to separate the construction of a complex object from its representation.
-    - Use to create different representations of the same product.
-    - Use to avoid multiple constructors configuration for the same object.
+
+    -   Use to separate the construction of a complex object from its representation.
+    -   Use to create different representations of the same product.
+    -   Use to avoid multiple constructors configuration for the same object.
 
 -   [Factory Method](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/FactoryMethod)
+
     -   Use to separate objects construction code from the code that actually uses the objects.
     -   Use to support the addition of new objects to the system without modifying the client code.
 
 -   [Prototype](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/Prototype)
+
     -   Use when your code needs a copy of an object and you don't want to depend on the concrete classes of the object to be copied.
     -   Use when you have objects with complex initialization requirements. Cloning the object and updating just the properties you need.
     -   Use Prototype Pattern when you have a complex object with several configurations, all of them slightly different.
@@ -28,7 +32,7 @@
 
 ## Structural Patterns
 
--   Adapter
+-   [Adapter](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Structural/Adapter)
 -   Bridge
 -   [Composite](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Structural/Composite). Use in a hierarchical structure of objects to treat the same way individual nodes and whole branches of nodes in the tree.
 -   Decorator ?!
