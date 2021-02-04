@@ -12,6 +12,8 @@
 
     -   Use to separate the construction of a complex object from its representation.
     -   Use to create different representations of the same product.
+    -   Use to concatenate steps for the creation of the same product (StringBuilder).
+    -   Use to append information dynamically to a product already created.
     -   Use to avoid multiple constructors configuration for the same object.
 
 -   [Factory Method](https://github.com/osotorrio/designpatterns/tree/master/GangOfFour.Patterns/Creational/FactoryMethod)
