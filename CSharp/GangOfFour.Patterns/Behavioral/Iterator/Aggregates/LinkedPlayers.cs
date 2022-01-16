@@ -1,11 +1,11 @@
-﻿using GangOfFour.Patterns.Behavioral.Iterator.Iterators;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using GangOfFour.Patterns.Behavioral.Iterator.Iterators;
 
 namespace GangOfFour.Patterns.Behavioral.Iterator.Aggregates
 {
     public class LinkedPlayers : AbstractAggregate
     {
-        private LinkedList<Player> _list = new LinkedList<Player>();
+        private readonly LinkedList<Player> _list = new();
 
         public override IIterator GetIterator()
         {
@@ -19,7 +19,7 @@ namespace GangOfFour.Patterns.Behavioral.Iterator.Aggregates
 
         public Player this[int index]
         {
-            get 
+            get
             {
                 var current = _list.First;
 

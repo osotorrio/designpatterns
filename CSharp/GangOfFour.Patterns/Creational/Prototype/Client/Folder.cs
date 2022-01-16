@@ -1,6 +1,6 @@
-﻿using GangOfFour.Patterns.Creational.Prototype.Prototypes;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Text;
+using GangOfFour.Patterns.Creational.Prototype.Prototypes;
 
 namespace GangOfFour.Patterns.Creational.Prototype.Client
 {
@@ -56,12 +56,12 @@ namespace GangOfFour.Patterns.Creational.Prototype.Client
             }
         }
 
-        private void PopFolderNamesRecursively(StringBuilder path, Stack<string> folderNames)
+        private static void PopFolderNamesRecursively(StringBuilder path, Stack<string> folderNames)
         {
             while (folderNames.Count > 0)
             {
                 path.Append(folderNames.Pop());
-                path.Append("\\");
+                path.Append('\\');
             }
         }
     }

@@ -12,10 +12,10 @@
             ScheduleTeamDrinks();
         }
 
-        private void PrintOutPolicyCompanyDocuments(string employee) { }
+        private static void PrintOutPolicyCompanyDocuments(string employee) { }
 
-        private void AddEmployeeToCoreValuesAndDecordTraining(string employee) { }
+        private static void AddEmployeeToCoreValuesAndDecordTraining(string employee) { }
 
-        private void ScheduleTeamDrinks() { }
+        private static void ScheduleTeamDrinks() { }
     }
 }

@@ -4,7 +4,7 @@ namespace GangOfFour.Patterns.Behavioral.Iterator.Iterators
 {
     public class LinkedPlayersIterator : IIterator
     {
-        private LinkedPlayers _collection;
+        private readonly LinkedPlayers _collection;
         private int _counter = 0;
 
         public LinkedPlayersIterator(LinkedPlayers collection)

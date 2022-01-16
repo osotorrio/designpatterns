@@ -11,8 +11,8 @@
             ScheduleTeamPresentationMetting();
         }
 
-        private void PrintOutPolicyCompanyDocuments(string employee) { }
+        private static void PrintOutPolicyCompanyDocuments(string employee) { }
 
-        private void ScheduleTeamPresentationMetting() { }
+        private static void ScheduleTeamPresentationMetting() { }
     }
 }

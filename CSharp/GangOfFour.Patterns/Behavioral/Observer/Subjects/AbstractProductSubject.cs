@@ -1,12 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices.ComTypes;
 
 namespace GangOfFour.Patterns.Behavioral.Observer
 {
     public abstract class AbstractProductSubject
     {
-        private readonly List<IAbstractCustomerObserver> _observers = new List<IAbstractCustomerObserver>();
+        private readonly List<IAbstractCustomerObserver> _observers = new();
 
         public void Attach(IAbstractCustomerObserver customerObserver)
         {
@@ -21,7 +20,7 @@ namespace GangOfFour.Patterns.Behavioral.Observer
 
         public void Notify()
         {
-            for (int i = 0; i < _observers.Count(); i++)
+            for (int i = 0; i < _observers.Count; i++)
             {
                 _observers[i].Update(this);
             }

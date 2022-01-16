@@ -1,11 +1,11 @@
-﻿using GangOfFour.Patterns.Behavioral.Iterator.Iterators;
-using System.Collections;
+﻿using System.Collections;
+using GangOfFour.Patterns.Behavioral.Iterator.Iterators;
 
 namespace GangOfFour.Patterns.Behavioral.Iterator.Aggregates
 {
     public class ArrayPlayers : AbstractAggregate
     {
-        private ArrayList _list = new ArrayList();
+        private readonly ArrayList _list = new();
 
         public override IIterator GetIterator()
         {

@@ -1,14 +1,14 @@
-﻿using GangOfFour.Patterns.Structural.Composite.Components;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using GangOfFour.Patterns.Structural.Composite.Components;
 
 namespace GangOfFour.Patterns.Structural.Composite.Composites
 {
     public class BundleCourseComposite : CourseComponent, IComposite
     {
-        private List<CourseComponent> _courses = new List<CourseComponent>();
+        private readonly List<CourseComponent> _courses = new();
 
-        public BundleCourseComposite(string name, decimal price) : base(name, price){}
+        public BundleCourseComposite(string name, decimal price) : base(name, price) { }
 
         public void AddCurse(CourseComponent course)
         {

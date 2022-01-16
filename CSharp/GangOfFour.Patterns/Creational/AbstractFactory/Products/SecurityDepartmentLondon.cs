@@ -13,8 +13,8 @@ namespace GangOfFour.Patterns.Creational.AbstractFactory.Products
             PrintOutCardKey(employee);
         }
 
-        private void SetBuildingAccessBaseOnRole(string employee, JobTitles jobTitle) { }
+        private static void SetBuildingAccessBaseOnRole(string employee, JobTitles jobTitle) { }
 
-        private void PrintOutCardKey(string employee) { }
+        private static void PrintOutCardKey(string employee) { }
     }
 }

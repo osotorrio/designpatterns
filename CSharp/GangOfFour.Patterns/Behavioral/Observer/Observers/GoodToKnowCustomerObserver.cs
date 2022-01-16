@@ -22,7 +22,7 @@ namespace GangOfFour.Patterns.Behavioral.Observer.Subjects
             SendEmail();
         }
 
-        public void SendEmail()
+        public static void SendEmail()
         {
             /*
             Here the code to notify the customer by email anytime the price has changed.

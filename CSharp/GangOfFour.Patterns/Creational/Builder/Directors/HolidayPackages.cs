@@ -1,6 +1,6 @@
-﻿using GangOfFour.Patterns.Creational.Builder.Builders;
+﻿using System;
+using GangOfFour.Patterns.Creational.Builder.Builders;
 using GangOfFour.Patterns.Creational.Builder.Stuff;
-using System;
 
 namespace GangOfFour.Patterns.Creational.Builder.Directors
 {
@@ -27,7 +27,7 @@ namespace GangOfFour.Patterns.Creational.Builder.Directors
                 Checkout = outboundDate.AddDays(7).AddHours(3),
                 Price = 184.50m
             });
-            
+
             builder.AddThemePark(new ThemeParkReservation
             {
                 Date = outboundDate.AddHours(5),

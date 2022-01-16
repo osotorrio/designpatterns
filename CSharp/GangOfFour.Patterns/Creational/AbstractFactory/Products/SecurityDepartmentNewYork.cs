@@ -18,10 +18,10 @@ namespace GangOfFour.Patterns.Creational.AbstractFactory.Products
             }
         }
 
-        private void SetUpTwoFactorAuthentication(string employee) { }
+        private static void SetUpTwoFactorAuthentication(string employee) { }
 
-        private void GeneratePassword(string employee) { }
+        private static void GeneratePassword(string employee) { }
 
-        private void SetBuildingAccessBaseOnRole(string employee, JobTitles jobTitle) { }
+        private static void SetBuildingAccessBaseOnRole(string employee, JobTitles jobTitle) { }
     }
 }

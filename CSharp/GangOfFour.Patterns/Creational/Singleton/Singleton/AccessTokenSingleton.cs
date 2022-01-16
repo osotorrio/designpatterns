@@ -1,5 +1,5 @@
-﻿using GangOfFour.Patterns.Creational.Singleton.Stuff;
-using System;
+﻿using System;
+using GangOfFour.Patterns.Creational.Singleton.Stuff;
 
 namespace GangOfFour.Patterns.Creational.Singleton.Singleton
 {
@@ -9,7 +9,7 @@ namespace GangOfFour.Patterns.Creational.Singleton.Singleton
 
         private static IHttpClient _client;
 
-        private static readonly object _lock = new object();
+        private static readonly object _lock = new();
 
         public string Token { get; private set; }
 

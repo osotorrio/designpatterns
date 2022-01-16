@@ -1,13 +1,13 @@
-﻿using GangOfFour.Patterns.Behavioral.Iterator.Aggregates;
+﻿using System.Collections.Generic;
+using GangOfFour.Patterns.Behavioral.Iterator.Aggregates;
 using Shouldly;
-using System.Collections.Generic;
 using Xunit;
 
 namespace GangOfFour.Patterns.Behavioral.Iterator
 {
     public class ApplicationCode
     {
-        private List<string> _players = new List<string>();
+        private readonly List<string> _players = new();
 
         [Fact]
         public void ExampleIteratorPattern()

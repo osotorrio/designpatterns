@@ -1,11 +1,10 @@
 ﻿using GangOfFour.Patterns.Behavioral.Iterator.Aggregates;
-using System;
 
 namespace GangOfFour.Patterns.Behavioral.Iterator.Iterators
 {
     public class ArrayPlayersIterator : IIterator
     {
-        private ArrayPlayers _collection;
+        private readonly ArrayPlayers _collection;
         private int _counter = 0;
 
         public ArrayPlayersIterator(ArrayPlayers collection)
