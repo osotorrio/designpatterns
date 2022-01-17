@@ -7,7 +7,7 @@ namespace GangOfFour.Patterns.Creational.Singleton.Client
 {
     public class Application
     {
-        private const string _expectedToken = "aHR0cHM6Ly9hcGkvYWNjZXNzL3Rva2Vuc29tZUBlbWFpbC5jb21zb21lcGFzc3dvcmQ=";
+        private const string _expectedToken = "aHR0cHM6Ly9hcGkvYWNjZXNzL3Rva2VuYW5vdGhlckBlbWFpbC5jb21hbm90aGVycGFzc3dvcmQ=";
 
         public Application()
         {
