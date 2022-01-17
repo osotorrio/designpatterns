@@ -7,7 +7,7 @@ Compose objects into tree structures to represent part-whole hierarchies. Compos
 
 ### UML diagram
 
-![Source book: Design Patterns, Elements of Reusable Object-Oriented Software](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Structural/Composite/img/uml_diagram.png)
+![Source book: Design Patterns, Elements of Reusable Object-Oriented Software](https://github.com/osotorrio/designpatterns/blob/master/CSharp/Structural/Composite/uml_diagram.png)
 
 
 ### Diagram explained

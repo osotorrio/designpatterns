@@ -7,7 +7,7 @@ Define a one-to-many dependency between objects so that when one object changes 
 
 ### UML diagram
 
-![Source book: Design Patterns, Elements of Reusable Object-Oriented Software](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Behavioral/Observer/img/uml_diagram.png)
+![Source book: Design Patterns, Elements of Reusable Object-Oriented Software](https://github.com/osotorrio/designpatterns/blob/master/CSharp/Behavioral/Observer/uml_diagram.png)
 
 
 ### Diagram explained

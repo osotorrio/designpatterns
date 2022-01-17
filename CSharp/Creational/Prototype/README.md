@@ -6,7 +6,7 @@ Specify the kinds of objects to create using a prototypical instance, and create
 
 ### UML diagram
 
-![Source book: Design Patterns, Elements of Reusable Object-Oriented Software](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/Prototype/uml_diagram.png)
+![Source book: Design Patterns, Elements of Reusable Object-Oriented Software](https://github.com/osotorrio/designpatterns/tree/master/CSharp/Creational/Prototype)
 
 ### Diagram explained
 

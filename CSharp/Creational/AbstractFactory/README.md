@@ -6,7 +6,7 @@ Provide an interface for creating families of related or dependent objects witho
 
 ### UML diagram
 
-![Source book: Design Patterns, Elements of Reusable Object-Oriented Software](https://github.com/osotorrio/designpatterns/blob/master/GangOfFour.Patterns/Creational/AbstractFactory/uml_diagram.png)
+![Source book: Design Patterns, Elements of Reusable Object-Oriented Software](https://github.com/osotorrio/designpatterns/blob/master/CSharp/Creational/AbstractFactory/uml_diagram.png)
 
 ### Diagram explained
 
