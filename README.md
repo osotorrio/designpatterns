@@ -16,7 +16,7 @@
     -   Use to append information dynamically to a product already created.
     -   Use to avoid multiple constructors configuration for the same object.
 
--   Factory Method [C#](https://github.com/osotorrio/designpatterns/tree/master/CSharp/Creational/FactoryMethod)
+-   Factory Method [C#](https://github.com/osotorrio/designpatterns/tree/master/CSharp/Creational/FactoryMethod) [TypeScript](https://github.com/osotorrio/designpatterns/tree/master/TypeScript/Creational/FactoryMethod)
 
     -   Use to separate objects construction code from the code that actually uses the objects.
     -   Use to support the addition of new objects to the system without modifying the client code.
