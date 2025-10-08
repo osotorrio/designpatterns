@@ -4,6 +4,8 @@
 * Acts as a local adapter: hides network, auth, resiliency and observability logic from the client.
 * Commonly implemented as a sidecar container, local daemon, or per-host proxy.
 
+![ambassador_diagram](./ambassador_diagram.webp)
+
 # Problem that it tries to solve
 
 * Keeps client code simple by **offloading cross-cutting network concerns** (retries, timeouts, TLS, logging).
@@ -51,7 +53,6 @@ Here’s a **concise, one-page comparison table and diagram summary** of the **A
 ---
 
 # Diagrams
-![ambassador_diagram](./ambassador_diagram.webp)
 
 ![ambassador_example](./ambassador_example.png)
 
