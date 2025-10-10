@@ -4,6 +4,8 @@
 
 - Originally popularized by **Eric Evans** in *Domain-Driven Design (DDD)*, the ACL enables a clean separation between systems by transforming data and requests between them, preserving the integrity of the core domain.
 
+![anti-corruption-layer](./anti-corruption-layer.png)
+
 # Problem that it tries to solve
 
 When integrating with external or legacy systems, the internal domain model can become **polluted** by external representations, APIs, or business logic inconsistencies. This pollution may lead to:
