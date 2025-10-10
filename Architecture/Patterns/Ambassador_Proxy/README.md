@@ -13,7 +13,7 @@
 * Reduces client’s coupling to remote service APIs and changes.
 * Improves latency and reliability by making client→proxy calls local (intra-host) while proxy handles remote calls.
 
-## Scenarios when to use it
+# Scenarios when to use it
 - **When the client code is legacy or hard to modify**  
   - The client cannot easily be updated to include modern networking, security, or telemetry features.  
   - The ambassador acts as a *shim* that transparently adds this functionality.  
@@ -55,11 +55,7 @@
 * **Security handling:** secrets injection and trust boundaries must be designed (sidecars share pod trust; host daemons share node trust).
 * **When not suitable:** if you need strict centralized quota enforcement, deduplication, or single-point caching, a centralized gateway/façade may be a better fit.
 
-Here’s a **concise, one-page comparison table and diagram summary** of the **Ambassador Pattern vs. Centralized Gateway** — perfect as a reference sheet.
-
----
-
-## 🧭 **Ambassador Pattern vs. Centralized Gateway**
+# Ambassador Pattern vs. Centralized Gateway
 
 | Aspect                     | **Ambassador Pattern (co-located)**                               | **Centralized Gateway (shared service)**               |
 | -------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------ |
@@ -74,7 +70,6 @@ Here’s a **concise, one-page comparison table and diagram summary** of the **A
 | **Use When**               | You need per-client resiliency, local observability, or isolation | You need global authentication, rate limiting, caching |
 | **Typical Implementation** | Sidecar proxy (e.g., Envoy, Linkerd, Consul Connect)              | API gateway or edge proxy (e.g., Kong, NGINX, Apigee)  |
 
----
 
 # Diagrams
 
