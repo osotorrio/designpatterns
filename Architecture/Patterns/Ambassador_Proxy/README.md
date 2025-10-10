@@ -13,13 +13,37 @@
 * Reduces client’s coupling to remote service APIs and changes.
 * Improves latency and reliability by making client→proxy calls local (intra-host) while proxy handles remote calls.
 
-# Scenarios when to use it
+## Scenarios when to use it
+- **When the client code is legacy or hard to modify**  
+  - The client cannot easily be updated to include modern networking, security, or telemetry features.  
+  - The ambassador acts as a *shim* that transparently adds this functionality.  
 
-* Clients need common networking behavior (retries, circuit breakers, backoff, metrics) without embedding it.
-* You want per-client or per-pod isolation for resiliency and configuration.
-* Running in container orchestration (e.g., Kubernetes) where sidecar deployment is easy.
-* You need to instrument or trace outbound calls per service with fine granularity.
-* You want to enforce client-specific routing or transform requests before reaching a remote service.
+- **When you need consistent networking behavior across multiple clients**  
+  - Centralize logic like retries, timeouts, connection pooling, and backoff in one proxy layer.  
+
+- **When you want to offload cross-cutting concerns from application logic**  
+  - Keep business logic clean while the ambassador manages routing, TLS, authentication, and retries.  
+
+- **When per-client isolation or resilience is required**  
+  - Each client has its own proxy, so network issues in one service don’t affect others.  
+
+- **When running in a containerized or service mesh environment**  
+  - Well-suited for Kubernetes sidecars or as part of a service mesh (e.g., Envoy, Istio, Linkerd).  
+
+- **When you need fine-grained observability and telemetry**  
+  - Collect logs, metrics, and distributed traces per service without changing client code.  
+
+- **When gradual rollout or migration is needed**  
+  - Ambassador can handle new endpoints, authentication, or API versions while clients transition.  
+
+- **When protocol or security translation is required**  
+  - Convert between communication protocols (HTTP ↔ gRPC, plaintext ↔ mTLS).  
+
+- **When the external system is unstable or slow**  
+  - Ambassador applies circuit breakers, caching, and retry logic to protect the client.  
+
+- **When integrating with third-party APIs or during modernization**  
+  - Acts as a façade or compatibility layer while decoupling clients from external changes.
 
 # Issues and considerations with this pattern
 
