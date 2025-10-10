@@ -56,6 +56,11 @@ Despite these costs, the ACL often pays off in large, long-lived systems where m
 
 The Adapter pattern can be part of an ACL implementation, but ACL encompasses broader architectural concerns beyond simple interface compatibility.
 
+# Diagrams
+![anti-corruption_layer](./anti-corruption_layer.webp)
+
+![anti-corruption_layer_serverless](./anti-corruption_layer_serverless.webp)
+
 # References
 
 ## Official Documentation
